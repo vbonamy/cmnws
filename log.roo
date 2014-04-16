@@ -1,40 +1,9 @@
-// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-26 14:44:36
-// [failed] database introspect --schema HARPEGE
-osgi install --url file:///opt/cpmnws/src/etc/roo-oracle-reverse/target/com.oracle.roo.jdbc.ojdbc6-11.2.0.3.jar
-// [failed] database introspect --schema HARPEGE
-// [failed] database introspect --schema HARPEGE
-// [failed] database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARPEGE --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-// [failed] database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARPEGE --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-// [failed] database reverse engineer --schema HARPEGE
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-// [failed]  database reverse engineer --schema HARP_ADM 
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --schema WEBSERVICE --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --schema WEBSERVICE --includeTables "V_NORMANDIE_LEOCARTE_PERSO" --enableViews 
-database reverse engineer --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO" --enableViews 
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --includeTables "V_NORMANDIE_LEOCARTE_PERSO" --enableViews 
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-focus --class ~.db.CpmnPerso
-finder list 
-// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-26 15:58:26
-// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-26 15:58:35
-focus --class ~.db.CpmnPerso
-finder list 
-finder list 
-finder list 
-finder list 
-// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-26 17:29:35
-// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-27 10:49:48
-database reverse engineer --package fr.normandieuniv.cpmnws.db --schema HARP_ADM --enableViews --includeTables "V_NORMANDIE_LEOCARTE_PERSO"
-// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-27 11:36:04
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2014-04-16 16:21:55
+database properties list 
+hint nt
+hint
+hint entities
+help
+jpa setup --database MYSQL --provider HIBERNATE 
+jpa setup --database MYSQL --provider HIBERNATE --databaseName donuts --hostName miribel --userName devsi --password il&oqp
+// [failed] database reverse engineer --schema unable-to-obtain-connection 
