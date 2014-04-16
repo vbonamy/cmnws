@@ -4,4 +4,25 @@
     <definition extends="default" name="vnormandieleocarte/index">
         <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/index.jspx"/>
     </definition>
+<definition extends="default" name="vnormandieleocarte/list">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/list.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/show">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/show.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEquals">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEquals.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike.jspx"/>
+    </definition>
 </tiles-definitions>

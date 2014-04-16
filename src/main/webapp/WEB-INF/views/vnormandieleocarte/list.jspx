@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_normandieuniv_cmnws_db_VNormandieLeocarte" items="${vnormandieleocartes}" z="zdUwLC5lHvhyCb5lYB6RBvOvhKc=">
+        <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="leocode" update="false" z="IYsceHR83GfbJukGtP/LHNwCn+E=">
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationLibelle" property="typePopulationLibelle" z="AJKvZpFPaldFhTIkyTdYNYKNF4k="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCnous" property="typePopulationCnous" z="HoYUyGaRuDMhBVESu7O2CooAq3s="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeContratLibelle" property="typeContratLibelle" z="kOiabQNVGp55LkVdwl+iVW9odyc="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeContratCode" property="typeContratCode" z="2qtwY5c0DRyCzrMmZjYjrJe2Zfg="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" z="WnDj160py4lxHg00j0tRoC7lrAo="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
+        </table:table>
+    </page:list>
+</div>

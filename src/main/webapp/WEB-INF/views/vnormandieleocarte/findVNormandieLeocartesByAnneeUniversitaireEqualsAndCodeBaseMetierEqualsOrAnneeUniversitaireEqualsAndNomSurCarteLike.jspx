@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike" id="ff_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" z="Cy1o/ph1Hy/Rtga2qxVZDPNi0JY=">
+        <field:input disableFormBinding="true" field="anneeUniversitaire" id="f_fr_normandieuniv_cmnws_db_VNormandieLeocarte_anneeUniversitaire" required="true" z="DZ+0LtPJcvYzhN+ANEuSR5T8fXE="/>
+        <field:input disableFormBinding="true" field="codeBaseMetier" id="f_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" required="true" z="+httpbjPIgz662HFD8ZCULlAinw="/>
+        <field:input disableFormBinding="true" field="nomSurCarte" id="f_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" required="true" z="K0k8nuIM1WP88jXkoBaOrtvnnUo="/>
+    </form:find>
+</div>
