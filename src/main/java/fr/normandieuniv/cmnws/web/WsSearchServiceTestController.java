@@ -15,9 +15,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package fr.normandieuniv.cpmnws.web;
+package fr.normandieuniv.cmnws.web;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -28,21 +27,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import fr.normandieuniv.cpmnws.db.CpmnPerso;
-import fr.normandieuniv.cpmnws.services.CpmnWsSearchService;
+import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
+import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 
 @RequestMapping("/searchwstest/**")
 @Controller
 public class WsSearchServiceTestController {
 
 	@Resource
-	VNormandieLeocarteWsSearchService cpmnWsSearchService;
+	VNormandieLeocarteWsSearchService wsSearchService;
     
     @RequestMapping(value="search", method = RequestMethod.GET)
-    public String searchWs(@RequestParam(required=false) BigDecimal anneeUniv, @RequestParam(required=false) BigDecimal noIndividu, @RequestParam(required=false) String nom, @RequestParam(required=false) Integer operator, Model uiModel) {
-    	List<CpmnPerso> cpmnpersoes = cpmnWsSearchService.search(anneeUniv, noIndividu, nom, operator);
-        uiModel.addAttribute("cpmnpersoes", cpmnpersoes);
-        return "cpmnpersos/list";
+    public String searchWs(@RequestParam(required=false) String anneeUniversitaire, @RequestParam(required=false) String codeBaseMetier, @RequestParam(required=false) String nom, @RequestParam(required=false) Integer operator, Model uiModel) {
+    	List<VNormandieLeocarte> leocartes = wsSearchService.search(anneeUniversitaire, codeBaseMetier, nom, operator);
+        uiModel.addAttribute("leocartes", leocartes);
+        return "leocartes/list";
     }
     
     @RequestMapping

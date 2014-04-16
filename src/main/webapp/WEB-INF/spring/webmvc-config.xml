@@ -91,5 +91,5 @@
       </list>
     </property>
   </bean>
-<bean class="fr.normandieuniv.cpmnws.web.ApplicationConversionServiceFactoryBean" id="applicationConversionService"/>
+<bean class="fr.normandieuniv.cmnws.web.ApplicationConversionServiceFactoryBean" id="applicationConversionService"/>
 </beans>
