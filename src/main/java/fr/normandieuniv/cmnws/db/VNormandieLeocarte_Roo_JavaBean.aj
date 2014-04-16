@@ -4,13 +4,15 @@
 package fr.normandieuniv.cmnws.db;
 
 import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
-privileged aspect VNormandieLeocarte_Roo_Jpa_Entity {
+privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
-    declare @type: VNormandieLeocarte: @Entity;
+    public String VNormandieLeocarte.getLeocode() {
+        return this.leocode;
+    }
     
-    declare @type: VNormandieLeocarte: @Table(name = "V_NORMANDIE_LEOCARTE");
+    public void VNormandieLeocarte.setLeocode(String leocode) {
+        this.leocode = leocode;
+    }
     
 }

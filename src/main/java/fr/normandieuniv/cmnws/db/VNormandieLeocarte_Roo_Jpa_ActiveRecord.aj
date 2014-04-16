@@ -4,7 +4,6 @@
 package fr.normandieuniv.cmnws.db;
 
 import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
-import fr.normandieuniv.cmnws.db.VNormandieLeocartePK;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -29,9 +28,9 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
         return entityManager().createQuery("SELECT o FROM VNormandieLeocarte o", VNormandieLeocarte.class).getResultList();
     }
     
-    public static VNormandieLeocarte VNormandieLeocarte.findVNormandieLeocarte(VNormandieLeocartePK id) {
-        if (id == null) return null;
-        return entityManager().find(VNormandieLeocarte.class, id);
+    public static VNormandieLeocarte VNormandieLeocarte.findVNormandieLeocarte(String leocode) {
+        if (leocode == null || leocode.length() == 0) return null;
+        return entityManager().find(VNormandieLeocarte.class, leocode);
     }
     
     public static List<VNormandieLeocarte> VNormandieLeocarte.findVNormandieLeocarteEntries(int firstResult, int maxResults) {
@@ -50,7 +49,7 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            VNormandieLeocarte attached = VNormandieLeocarte.findVNormandieLeocarte(this.id);
+            VNormandieLeocarte attached = VNormandieLeocarte.findVNormandieLeocarte(this.leocode);
             this.entityManager.remove(attached);
         }
     }
