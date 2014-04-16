@@ -38,8 +38,8 @@ public class WsSearchServiceTestController {
 	VNormandieLeocarteWsSearchService wsSearchService;
     
     @RequestMapping(value="search", method = RequestMethod.GET)
-    public String searchWs(@RequestParam(required=false) String anneeUniversitaire, @RequestParam(required=false) String codeBaseMetier, @RequestParam(required=false) String nom, @RequestParam(required=false) Integer operator, Model uiModel) {
-    	List<VNormandieLeocarte> leocartes = wsSearchService.search(anneeUniversitaire, codeBaseMetier, nom, operator);
+    public String searchWs(@RequestParam(required=false) String anneeUniversitaire, @RequestParam(required=false) String codeBaseMetier, @RequestParam(required=false) String nomSurCarte, @RequestParam(required=false) Integer operator, Model uiModel) {
+    	List<VNormandieLeocarte> leocartes = wsSearchService.search(anneeUniversitaire, codeBaseMetier, nomSurCarte, operator);
         uiModel.addAttribute("leocartes", leocartes);
         return "leocartes/list";
     }

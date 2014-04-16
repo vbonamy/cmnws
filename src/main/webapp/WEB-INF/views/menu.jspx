@@ -28,14 +28,6 @@
             <menu:item id="i_controller__searchwstestindex_id" label="Méthode Search" messageCode="global_generic" url="/searchwstest/index" z="user-managed"/>
             <menu:item id="i_controller__vnormandieleocarteindex_id" messageCode="global_generic" url="/vnormandieleocarte/index" z="IghW3qtnYwTQRznaJYOrlUPYJ+k="/>
         </menu:category>
-        <menu:category id="c_cpmnperso" label="Requêtes 'directes' en BD" z="user-managed">
-            <menu:item id="i_cpmnperso_list" messageCode="global_menu_list" url="/cpmnpersos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
-            <menu:item id="fi_cpmnperso_anneeunivequals" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEquals&amp;form" z="jHppQniOhr8xG1FiywpVwLy5HqE="/>
-            <menu:item id="fi_cpmnperso_anneeunivequalsandnoindividuequals" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNoIndividuEquals&amp;form" z="fTU4gI0+/FbNdK3tw4T9bA/6uy8="/>
-            <menu:item id="fi_cpmnperso_anneeunivequalsandnoindividuequalsandnomcartelike" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNoIndividuEqualsAndNomCarteLike&amp;form" z="NxcNMOeNlHBRjxt2hidpd0b9XBk="/>
-            <menu:item id="fi_cpmnperso_anneeunivequalsandnoindividuequalsoranneeunivequalsandnomcartelike" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNoIndividuEqualsOrAnneeUnivEqualsAndNomCarteLike&amp;form" z="pogx9SFjo+tL8gQ7AmbIXl1x/Vc="/>
-            <menu:item id="fi_cpmnperso_anneeunivequalsandnomcartelike" messageCode="global_menu_find" url="/cpmnpersos?find=ByAnneeUnivEqualsAndNomCarteLike&amp;form" z="Q2fA0SNB/D50+MTc/ssGSHxLBso="/>
-        </menu:category>
         <menu:category id="c_vnormandieleocarte" z="0w9rveKjI4FnBqGIEQ0R8VcmQGU=">
             <menu:item id="i_vnormandieleocarte_list" messageCode="global_menu_list" url="/vnormandieleocarte?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ET5v09/GMTjDcKBjd5ytsWVKIpA="/>
             <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequals" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEquals&amp;form" z="ROqWgTrNujfSpDYzd6WBHhZ19j4="/>

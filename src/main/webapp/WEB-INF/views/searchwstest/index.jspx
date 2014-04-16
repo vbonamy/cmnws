@@ -33,13 +33,13 @@
 
 		<form action="search" method="GET">
 			<p>
-				anneeUniv : <input name="anneeUniv" />
+				anneeUniv : <input name="anneeUniversitaire" />
 			</p>
 			<p>
-				noIndividu : <input name="noIndividu" />
+				noIndividu : <input name="codeBaseMetier" />
 			</p>
 			<p>
-				nom : <input name="nom" />
+				nom : <input name="nomSurCarte" />
 			</p>
 			<p>
 				operator : <input name="operator" />

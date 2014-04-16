@@ -36,7 +36,7 @@ public class VNormandieLeocarteWsSearchService {
 	private static Logger log = Logger.getLogger(VNormandieLeocarteWsSearchService.class);
 
 	@WebMethod
-	public List<VNormandieLeocarte> search(@WebParam(name = "anneeUniversitaire") String anneeUniversitaire, @WebParam(name = "codeBaseMetier") String codeBaseMetier, @WebParam(name = "nom") String nom,
+	public List<VNormandieLeocarte> search(@WebParam(name = "anneeUniversitaire") String anneeUniversitaire, @WebParam(name = "codeBaseMetier") String codeBaseMetier, @WebParam(name = "nomSurCarte") String nom,
 			@WebParam(name = "operator") Integer operator) {
 
 		long startTime = System.currentTimeMillis();	
