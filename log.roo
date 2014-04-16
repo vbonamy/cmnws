@@ -7,3 +7,18 @@ help
 jpa setup --database MYSQL --provider HIBERNATE 
 jpa setup --database MYSQL --provider HIBERNATE --databaseName donuts --hostName miribel --userName devsi --password il&oqp
 // [failed] database reverse engineer --schema unable-to-obtain-connection 
+// [failed] addon info id --searchResultId com.mysql.jdbc.Driver 
+// [failed] addon info id --searchResultId ..
+// [failed] addon info id --searchResultId jdbcdriver$
+// [failed] addon info id --searchResultId jdbcdriver
+addon list 
+// [failed] addon info id --searchResultId driverclass:com.mysql.jdbc.Driver
+// [failed] addon info id --searchResultId jdbcdriver
+// [failed] database reverse engineer --schema unable-to-obtain-connection 
+addon info id --searchResultId 0001
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon  install id --searchResultId 0001
+// [failed] database reverse engineer --schema unable-to-obtain-connection 
+database reverse engineer --schema unable-to-obtain-connection --enableViews true --includeTables V_NORMANDIE_LEOCARTE --package fr.normandieuniv.cmnws.db
