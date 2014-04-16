@@ -36,7 +36,7 @@ import fr.normandieuniv.cpmnws.services.CpmnWsSearchService;
 public class WsSearchServiceTestController {
 
 	@Resource
-	CpmnWsSearchService cpmnWsSearchService;
+	VNormandieLeocarteWsSearchService cpmnWsSearchService;
     
     @RequestMapping(value="search", method = RequestMethod.GET)
     public String searchWs(@RequestParam(required=false) BigDecimal anneeUniv, @RequestParam(required=false) BigDecimal noIndividu, @RequestParam(required=false) String nom, @RequestParam(required=false) Integer operator, Model uiModel) {
