@@ -63,12 +63,6 @@
         <license>Apache License, Version 1.1</license>
     </artifact>
     <artifact>
-        <groupId>com.oracle</groupId>
-        <artifactId>ojdbc6</artifactId>
-        <version>11.2.0.3</version>
-        <license>Oracle License -> this library is not provided by cpmnws</license>
-    </artifact>
-    <artifact>
         <groupId>com.sun.istack</groupId>
         <artifactId>istack-commons-runtime</artifactId>
         <version>2.2.1</version>
@@ -93,8 +87,8 @@
         <license>Apache License, Version 2.0</license>
     </artifact>
     <artifact>
-        <groupId>fr.normandieuniv.cpmnws</groupId>
-        <artifactId>cpmnws</artifactId>
+        <groupId>fr.normandieuniv.cmnws</groupId>
+        <artifactId>cmnws</artifactId>
         <version>1.0.0</version>
         <license>Apache License, Version 2.0</license>
     </artifact>
@@ -125,9 +119,14 @@
     <artifact>
         <groupId>org.springframework.roo</groupId>
         <artifactId>org.springframework.roo.annotations</artifactId>
-        <version>1.2.3.RELEASE</version>
+        <version>1.2.5.RELEASE</version>
         <license>Apache License, Version 2.0</license>
     </artifact>
-
+    <artifact>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.0.3</version>
+        <license>Apache License, Version 2.0</license>
+    </artifact>
     
 </license-lookup>
