@@ -45,6 +45,9 @@ public class VNormandieLeocarteWsSearchService {
 			nom = null;
 		
 		
+		if(codeBaseMetier != null && codeBaseMetier.trim().isEmpty())
+			codeBaseMetier = null;
+		
 		List<VNormandieLeocarte> urcpmns = null;
 
 		if (anneeUniversitaire == null) {
