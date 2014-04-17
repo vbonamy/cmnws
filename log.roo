@@ -25,3 +25,4 @@ database reverse engineer --schema unable-to-obtain-connection --enableViews tru
 focus --class fr.normandieuniv.cmnws.db.VNormandieLeocarte
 finder list 
 web mvc controller --class fr.normandieuniv.cmnws.web.VNormandieLeocarteController
+database reverse engineer --schema unable-to-obtain-connection --enableViews true --includeTables V_NORMANDIE_LEOCARTE --package fr.normandieuniv.cmnws.db

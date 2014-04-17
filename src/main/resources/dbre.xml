@@ -9,13 +9,14 @@
         <column name="typePopulationCNOUS" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR"/>
         <column name="typeContratLibelle" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="typeContratCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="leocode" primaryKey="false" required="false" scale="0" size="13" type="12,VARCHAR"/>
+        <column name="Leocode" primaryKey="false" required="false" scale="0" size="13" type="12,VARCHAR"/>
         <column name="prefixeLeoCode" primaryKey="false" required="false" scale="0" size="5" type="12,VARCHAR"/>
         <column name="codeBaseMetier" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
         <column name="persID" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="buNo" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
         <column name="Login" primaryKey="false" required="true" scale="0" size="20" type="12,VARCHAR"/>
-        <column name="eppn" primaryKey="false" required="true" scale="0" size="100" type="12,VARCHAR"/>
+        <column name="eduPersonAffiliation" primaryKey="false" required="true" scale="0" size="100" type="12,VARCHAR"/>
+        <column name="eppn" primaryKey="false" required="false" scale="0" size="34" type="12,VARCHAR"/>
         <column name="ine" primaryKey="false" required="false" scale="0" size="11" type="12,VARCHAR"/>
         <column name="nomSurCarte" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR"/>
         <column name="nomUsuel" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR"/>
@@ -38,6 +39,7 @@
         <column name="structRattSecondCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="structRattSecondRne" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="structRattSecondLibel" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
+        <column name="structRattMerePrincCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="structRattMerePrincRne" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="structRattMerePrincLibel" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="structRattMereSecondCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
