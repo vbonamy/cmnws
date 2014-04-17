@@ -55,6 +55,9 @@ public class VNormandieLeocarte {
     private String structRattPrincCode;
 
     @Column(columnDefinition = "text")
+    private String structRattMerePrincCode;
+
+    @Column(columnDefinition = "text")
     private String structRattPrincRne;
 
     @Column(columnDefinition = "text")

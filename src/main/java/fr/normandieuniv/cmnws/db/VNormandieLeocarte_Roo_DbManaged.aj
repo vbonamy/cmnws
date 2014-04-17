@@ -69,9 +69,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "etablissementRNE", length = 8)
     private String VNormandieLeocarte.etablissementRne;
     
-    @Column(name = "structRattMerePrincCode")
-    private String VNormandieLeocarte.structRattMerePrincCode;
-    
     @Column(name = "corps", length = 40)
     private String VNormandieLeocarte.corps;
     
@@ -264,14 +261,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setEtablissementRne(String etablissementRne) {
         this.etablissementRne = etablissementRne;
-    }
-    
-    public String VNormandieLeocarte.getStructRattMerePrincCode() {
-        return structRattMerePrincCode;
-    }
-    
-    public void VNormandieLeocarte.setStructRattMerePrincCode(String structRattMerePrincCode) {
-        this.structRattMerePrincCode = structRattMerePrincCode;
     }
     
     public String VNormandieLeocarte.getCorps() {

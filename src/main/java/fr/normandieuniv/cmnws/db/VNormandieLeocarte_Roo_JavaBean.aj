@@ -103,6 +103,14 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.structRattPrincCode = structRattPrincCode;
     }
     
+    public String VNormandieLeocarte.getStructRattMerePrincCode() {
+        return this.structRattMerePrincCode;
+    }
+    
+    public void VNormandieLeocarte.setStructRattMerePrincCode(String structRattMerePrincCode) {
+        this.structRattMerePrincCode = structRattMerePrincCode;
+    }
+    
     public String VNormandieLeocarte.getStructRattPrincRne() {
         return this.structRattPrincRne;
     }
