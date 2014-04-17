@@ -69,6 +69,42 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "etablissementRNE", length = 8)
     private String VNormandieLeocarte.etablissementRne;
     
+    @Column(name = "structRattPrincCode", length = 6)
+    private String VNormandieLeocarte.structRattPrincCode;
+    
+    @Column(name = "structRattPrincRne", length = 8)
+    private String VNormandieLeocarte.structRattPrincRne;
+    
+    @Column(name = "structRattPrincLibel", length = 60)
+    private String VNormandieLeocarte.structRattPrincLibel;
+    
+    @Column(name = "structRattSecondCode", length = 6)
+    private String VNormandieLeocarte.structRattSecondCode;
+    
+    @Column(name = "structRattSecondRne", length = 8)
+    private String VNormandieLeocarte.structRattSecondRne;
+    
+    @Column(name = "structRattSecondLibel", length = 60)
+    private String VNormandieLeocarte.structRattSecondLibel;
+    
+    @Column(name = "structMereRattPrincCode", length = 6)
+    private String VNormandieLeocarte.structMereRattPrincCode;
+    
+    @Column(name = "structMereRattPrincRne", length = 8)
+    private String VNormandieLeocarte.structMereRattPrincRne;
+    
+    @Column(name = "structMereRattPrincLibel", length = 60)
+    private String VNormandieLeocarte.structMereRattPrincLibel;
+    
+    @Column(name = "structMereRattSecondCode", length = 6)
+    private String VNormandieLeocarte.structMereRattSecondCode;
+    
+    @Column(name = "structMereRattSecondRne")
+    private String VNormandieLeocarte.structMereRattSecondRne;
+    
+    @Column(name = "structMereRattSecondLibel", length = 60)
+    private String VNormandieLeocarte.structMereRattSecondLibel;
+    
     @Column(name = "corps", length = 40)
     private String VNormandieLeocarte.corps;
     
@@ -261,6 +297,102 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setEtablissementRne(String etablissementRne) {
         this.etablissementRne = etablissementRne;
+    }
+    
+    public String VNormandieLeocarte.getStructRattPrincCode() {
+        return structRattPrincCode;
+    }
+    
+    public void VNormandieLeocarte.setStructRattPrincCode(String structRattPrincCode) {
+        this.structRattPrincCode = structRattPrincCode;
+    }
+    
+    public String VNormandieLeocarte.getStructRattPrincRne() {
+        return structRattPrincRne;
+    }
+    
+    public void VNormandieLeocarte.setStructRattPrincRne(String structRattPrincRne) {
+        this.structRattPrincRne = structRattPrincRne;
+    }
+    
+    public String VNormandieLeocarte.getStructRattPrincLibel() {
+        return structRattPrincLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructRattPrincLibel(String structRattPrincLibel) {
+        this.structRattPrincLibel = structRattPrincLibel;
+    }
+    
+    public String VNormandieLeocarte.getStructRattSecondCode() {
+        return structRattSecondCode;
+    }
+    
+    public void VNormandieLeocarte.setStructRattSecondCode(String structRattSecondCode) {
+        this.structRattSecondCode = structRattSecondCode;
+    }
+    
+    public String VNormandieLeocarte.getStructRattSecondRne() {
+        return structRattSecondRne;
+    }
+    
+    public void VNormandieLeocarte.setStructRattSecondRne(String structRattSecondRne) {
+        this.structRattSecondRne = structRattSecondRne;
+    }
+    
+    public String VNormandieLeocarte.getStructRattSecondLibel() {
+        return structRattSecondLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructRattSecondLibel(String structRattSecondLibel) {
+        this.structRattSecondLibel = structRattSecondLibel;
+    }
+    
+    public String VNormandieLeocarte.getStructMereRattPrincCode() {
+        return structMereRattPrincCode;
+    }
+    
+    public void VNormandieLeocarte.setStructMereRattPrincCode(String structMereRattPrincCode) {
+        this.structMereRattPrincCode = structMereRattPrincCode;
+    }
+    
+    public String VNormandieLeocarte.getStructMereRattPrincRne() {
+        return structMereRattPrincRne;
+    }
+    
+    public void VNormandieLeocarte.setStructMereRattPrincRne(String structMereRattPrincRne) {
+        this.structMereRattPrincRne = structMereRattPrincRne;
+    }
+    
+    public String VNormandieLeocarte.getStructMereRattPrincLibel() {
+        return structMereRattPrincLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructMereRattPrincLibel(String structMereRattPrincLibel) {
+        this.structMereRattPrincLibel = structMereRattPrincLibel;
+    }
+    
+    public String VNormandieLeocarte.getStructMereRattSecondCode() {
+        return structMereRattSecondCode;
+    }
+    
+    public void VNormandieLeocarte.setStructMereRattSecondCode(String structMereRattSecondCode) {
+        this.structMereRattSecondCode = structMereRattSecondCode;
+    }
+    
+    public String VNormandieLeocarte.getStructMereRattSecondRne() {
+        return structMereRattSecondRne;
+    }
+    
+    public void VNormandieLeocarte.setStructMereRattSecondRne(String structMereRattSecondRne) {
+        this.structMereRattSecondRne = structMereRattSecondRne;
+    }
+    
+    public String VNormandieLeocarte.getStructMereRattSecondLibel() {
+        return structMereRattSecondLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructMereRattSecondLibel(String structMereRattSecondLibel) {
+        this.structMereRattSecondLibel = structMereRattSecondLibel;
     }
     
     public String VNormandieLeocarte.getCorps() {

@@ -33,18 +33,18 @@
         <column name="etablissementCode" primaryKey="false" required="false" scale="0" size="107" type="12,VARCHAR"/>
         <column name="etablissementRNE" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
         <column name="employeur" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattPrincCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattPrincRne" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattPrincLibel" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattSecondCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattSecondRne" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattSecondLibel" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattMerePrincCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattMerePrincRne" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattMerePrincLibel" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattMereSecondCode" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattMereSecondRne" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
-        <column name="structRattMereSecondLibel" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
+        <column name="structRattPrincCode" primaryKey="false" required="false" scale="0" size="6" type="12,VARCHAR"/>
+        <column name="structRattPrincRne" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
+        <column name="structRattPrincLibel" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR"/>
+        <column name="structRattSecondCode" primaryKey="false" required="false" scale="0" size="6" type="12,VARCHAR"/>
+        <column name="structRattSecondRne" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
+        <column name="structRattSecondLibel" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR"/>
+        <column name="structMereRattPrincCode" primaryKey="false" required="false" scale="0" size="6" type="12,VARCHAR"/>
+        <column name="structMereRattPrincRne" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
+        <column name="structMereRattPrincLibel" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR"/>
+        <column name="structMereRattSecondCode" primaryKey="false" required="false" scale="0" size="6" type="12,VARCHAR"/>
+        <column name="structMereRattSecondRne" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
+        <column name="structMereRattSecondLibel" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR"/>
         <column name="corps" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR"/>
         <column name="responsabiliteStruct" primaryKey="false" required="false" scale="0" size="65535" type="-1,TEXT"/>
         <column name="indiceInm" primaryKey="false" required="false" scale="0" size="6" type="12,VARCHAR"/>

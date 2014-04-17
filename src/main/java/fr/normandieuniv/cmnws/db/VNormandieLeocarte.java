@@ -52,42 +52,6 @@ public class VNormandieLeocarte {
     private String employeur;
 
     @Column(columnDefinition = "text")
-    private String structRattPrincCode;
-
-    @Column(columnDefinition = "text")
-    private String structRattMerePrincCode;
-
-    @Column(columnDefinition = "text")
-    private String structRattPrincRne;
-
-    @Column(columnDefinition = "text")
-    private String structRattPrincLibel;
-
-    @Column(columnDefinition = "text")
-    private String structRattSecondCode;
-
-    @Column(columnDefinition = "text")
-    private String structRattSecondRne;
-
-    @Column(columnDefinition = "text")
-    private String structRattSecondLibel;
-
-    @Column(columnDefinition = "text")
-    private String structRattMerePrincRne;
-
-    @Column(columnDefinition = "text")
-    private String structRattMerePrincLibel;
-
-    @Column(columnDefinition = "text")
-    private String structRattMereSecondCode;
-
-    @Column(columnDefinition = "text")
-    private String structRattMereSecondRne;
-
-    @Column(columnDefinition = "text")
-    private String structRattMereSecondLibel;
-
-    @Column(columnDefinition = "text")
     private String responsabiliteStruct;
 
     @Column(columnDefinition = "text")
