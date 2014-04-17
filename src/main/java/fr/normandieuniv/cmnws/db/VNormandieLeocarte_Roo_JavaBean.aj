@@ -15,4 +15,188 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.leocode = leocode;
     }
     
+    public String VNormandieLeocarte.getAnneeUniversitaire() {
+        return this.anneeUniversitaire;
+    }
+    
+    public void VNormandieLeocarte.setAnneeUniversitaire(String anneeUniversitaire) {
+        this.anneeUniversitaire = anneeUniversitaire;
+    }
+    
+    public Boolean VNormandieLeocarte.getAutorisationtransmissionCrous() {
+        return this.autorisationtransmissionCrous;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationtransmissionCrous(Boolean autorisationtransmissionCrous) {
+        this.autorisationtransmissionCrous = autorisationtransmissionCrous;
+    }
+    
+    public Boolean VNormandieLeocarte.getAutorisationDiffusionPhoto() {
+        return this.autorisationDiffusionPhoto;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationDiffusionPhoto(Boolean autorisationDiffusionPhoto) {
+        this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
+    }
+    
+    public String VNormandieLeocarte.getTypeContratLibelle() {
+        return this.typeContratLibelle;
+    }
+    
+    public void VNormandieLeocarte.setTypeContratLibelle(String typeContratLibelle) {
+        this.typeContratLibelle = typeContratLibelle;
+    }
+    
+    public String VNormandieLeocarte.getTypeContratCode() {
+        return this.typeContratCode;
+    }
+    
+    public void VNormandieLeocarte.setTypeContratCode(String typeContratCode) {
+        this.typeContratCode = typeContratCode;
+    }
+    
+    public String VNormandieLeocarte.getPersID() {
+        return this.persID;
+    }
+    
+    public void VNormandieLeocarte.setPersID(String persID) {
+        this.persID = persID;
+    }
+    
+    public String VNormandieLeocarte.getTelPortableNo() {
+        return this.telPortableNo;
+    }
+    
+    public void VNormandieLeocarte.setTelPortableNo(String telPortableNo) {
+        this.telPortableNo = telPortableNo;
+    }
+    
+    public String VNormandieLeocarte.getTitreCarteLibelle() {
+        return this.titreCarteLibelle;
+    }
+    
+    public void VNormandieLeocarte.setTitreCarteLibelle(String titreCarteLibelle) {
+        this.titreCarteLibelle = titreCarteLibelle;
+    }
+    
+    public String VNormandieLeocarte.getEtablissementLibelle() {
+        return this.etablissementLibelle;
+    }
+    
+    public void VNormandieLeocarte.setEtablissementLibelle(String etablissementLibelle) {
+        this.etablissementLibelle = etablissementLibelle;
+    }
+    
+    public String VNormandieLeocarte.getEmployeur() {
+        return this.employeur;
+    }
+    
+    public void VNormandieLeocarte.setEmployeur(String employeur) {
+        this.employeur = employeur;
+    }
+    
+    public String VNormandieLeocarte.getStructRattPrincCode() {
+        return this.structRattPrincCode;
+    }
+    
+    public void VNormandieLeocarte.setStructRattPrincCode(String structRattPrincCode) {
+        this.structRattPrincCode = structRattPrincCode;
+    }
+    
+    public String VNormandieLeocarte.getStructRattPrincRne() {
+        return this.structRattPrincRne;
+    }
+    
+    public void VNormandieLeocarte.setStructRattPrincRne(String structRattPrincRne) {
+        this.structRattPrincRne = structRattPrincRne;
+    }
+    
+    public String VNormandieLeocarte.getStructRattPrincLibel() {
+        return this.structRattPrincLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructRattPrincLibel(String structRattPrincLibel) {
+        this.structRattPrincLibel = structRattPrincLibel;
+    }
+    
+    public String VNormandieLeocarte.getStructRattSecondCode() {
+        return this.structRattSecondCode;
+    }
+    
+    public void VNormandieLeocarte.setStructRattSecondCode(String structRattSecondCode) {
+        this.structRattSecondCode = structRattSecondCode;
+    }
+    
+    public String VNormandieLeocarte.getStructRattSecondRne() {
+        return this.structRattSecondRne;
+    }
+    
+    public void VNormandieLeocarte.setStructRattSecondRne(String structRattSecondRne) {
+        this.structRattSecondRne = structRattSecondRne;
+    }
+    
+    public String VNormandieLeocarte.getStructRattSecondLibel() {
+        return this.structRattSecondLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructRattSecondLibel(String structRattSecondLibel) {
+        this.structRattSecondLibel = structRattSecondLibel;
+    }
+    
+    public String VNormandieLeocarte.getStructRattMerePrincRne() {
+        return this.structRattMerePrincRne;
+    }
+    
+    public void VNormandieLeocarte.setStructRattMerePrincRne(String structRattMerePrincRne) {
+        this.structRattMerePrincRne = structRattMerePrincRne;
+    }
+    
+    public String VNormandieLeocarte.getStructRattMerePrincLibel() {
+        return this.structRattMerePrincLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructRattMerePrincLibel(String structRattMerePrincLibel) {
+        this.structRattMerePrincLibel = structRattMerePrincLibel;
+    }
+    
+    public String VNormandieLeocarte.getStructRattMereSecondCode() {
+        return this.structRattMereSecondCode;
+    }
+    
+    public void VNormandieLeocarte.setStructRattMereSecondCode(String structRattMereSecondCode) {
+        this.structRattMereSecondCode = structRattMereSecondCode;
+    }
+    
+    public String VNormandieLeocarte.getStructRattMereSecondRne() {
+        return this.structRattMereSecondRne;
+    }
+    
+    public void VNormandieLeocarte.setStructRattMereSecondRne(String structRattMereSecondRne) {
+        this.structRattMereSecondRne = structRattMereSecondRne;
+    }
+    
+    public String VNormandieLeocarte.getStructRattMereSecondLibel() {
+        return this.structRattMereSecondLibel;
+    }
+    
+    public void VNormandieLeocarte.setStructRattMereSecondLibel(String structRattMereSecondLibel) {
+        this.structRattMereSecondLibel = structRattMereSecondLibel;
+    }
+    
+    public String VNormandieLeocarte.getResponsabiliteStruct() {
+        return this.responsabiliteStruct;
+    }
+    
+    public void VNormandieLeocarte.setResponsabiliteStruct(String responsabiliteStruct) {
+        this.responsabiliteStruct = responsabiliteStruct;
+    }
+    
+    public String VNormandieLeocarte.getCotisationParticuliere() {
+        return this.cotisationParticuliere;
+    }
+    
+    public void VNormandieLeocarte.setCotisationParticuliere(String cotisationParticuliere) {
+        this.cotisationParticuliere = cotisationParticuliere;
+    }
+    
 }

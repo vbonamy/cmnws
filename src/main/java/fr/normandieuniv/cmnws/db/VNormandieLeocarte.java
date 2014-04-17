@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.EntityManager;
 import javax.persistence.Id;
 import javax.persistence.TypedQuery;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.roo.addon.dbre.RooDbManaged;
 import org.springframework.roo.addon.javabean.RooJavaBean;
@@ -17,10 +18,80 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class VNormandieLeocarte {
 	
     @Id
-    @Column(name = "leocode")
+    @Column
     private String leocode;
  
+    @Column(columnDefinition = "char")
+    @NotNull
+    private String anneeUniversitaire;
     
+    
+    @Column( columnDefinition = "BIT")
+    private Boolean autorisationtransmissionCrous;
+    
+    @Column(columnDefinition = "BIT")
+    private Boolean autorisationDiffusionPhoto;
+    
+    @Column(columnDefinition = "text")
+    private String typeContratLibelle;
+    
+    @Column(columnDefinition = "text")
+    private String typeContratCode;
+    
+    @Column(name = "persID", columnDefinition = "text")
+    private String persID;
+
+    @Column(columnDefinition = "text")
+    private String telPortableNo;
+
+    @Column(columnDefinition = "text")
+    private String titreCarteLibelle;
+
+    @Column(columnDefinition = "text")
+    private String etablissementLibelle;
+
+    @Column(columnDefinition = "text")
+    private String employeur;
+
+    @Column(columnDefinition = "text")
+    private String structRattPrincCode;
+
+    @Column(columnDefinition = "text")
+    private String  structRattPrincRne;
+
+    @Column(columnDefinition = "text")
+    private String structRattPrincLibel;
+
+    @Column(columnDefinition = "text")
+    private String structRattSecondCode;
+
+    @Column(columnDefinition = "text")
+    private String  structRattSecondRne;
+
+    @Column(columnDefinition = "text")
+    private String  structRattSecondLibel;
+
+    @Column(columnDefinition = "text")
+    private String  structRattMerePrincRne;
+
+    @Column(columnDefinition = "text")
+    private String structRattMerePrincLibel;
+
+    @Column(columnDefinition = "text")
+    private String  structRattMereSecondCode;
+
+    @Column(columnDefinition = "text")
+    private String  structRattMereSecondRne;
+
+    @Column(columnDefinition = "text")
+    private String structRattMereSecondLibel;
+
+    @Column(columnDefinition = "text")
+    private String   responsabiliteStruct;
+
+    @Column(columnDefinition = "text")
+    private String  cotisationParticuliere;
+
     
     public static TypedQuery<VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike(String anneeUniversitaire, String codeBaseMetier, String nomSurCarte) {
         if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");

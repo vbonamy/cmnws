@@ -6,10 +6,10 @@
         <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="leocode" update="false" z="IYsceHR83GfbJukGtP/LHNwCn+E=">
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationLibelle" property="typePopulationLibelle" z="AJKvZpFPaldFhTIkyTdYNYKNF4k="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCnous" property="typePopulationCnous" z="HoYUyGaRuDMhBVESu7O2CooAq3s="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeContratLibelle" property="typeContratLibelle" z="kOiabQNVGp55LkVdwl+iVW9odyc="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeContratCode" property="typeContratCode" z="2qtwY5c0DRyCzrMmZjYjrJe2Zfg="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" z="WnDj160py4lxHg00j0tRoC7lrAo="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_buNo" property="buNo" z="j9U4HAOxcI0ex6AawI8c63XDmzA="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" property="login" z="ab0/0eqcLvcAifGvs9wLBKv/yEo="/>
         </table:table>
     </page:list>
 </div>

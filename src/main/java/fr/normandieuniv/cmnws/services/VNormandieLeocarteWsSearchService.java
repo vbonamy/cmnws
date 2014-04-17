@@ -17,7 +17,6 @@
  */
 package fr.normandieuniv.cmnws.services;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 import javax.jws.WebMethod;
@@ -30,7 +29,7 @@ import org.springframework.stereotype.Service;
 import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
 
 @WebService
-@Service
+@Service("wsSearchService")
 public class VNormandieLeocarteWsSearchService {
 
 	private static Logger log = Logger.getLogger(VNormandieLeocarteWsSearchService.class);
