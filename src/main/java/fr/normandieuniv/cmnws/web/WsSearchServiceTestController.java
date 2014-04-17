@@ -38,10 +38,20 @@ public class WsSearchServiceTestController {
 	VNormandieLeocarteWsSearchService wsSearchService;
     
     @RequestMapping(value="search", method = RequestMethod.GET)
-    public String searchWs(@RequestParam(required=false) String anneeUniversitaire, @RequestParam(required=false) String codeBaseMetier, @RequestParam(required=false) String nomSurCarte, @RequestParam(required=false) Integer operator, Model uiModel) {
-    	List<VNormandieLeocarte> leocartes = wsSearchService.search(anneeUniversitaire, codeBaseMetier, nomSurCarte, operator);
-        uiModel.addAttribute("leocartes", leocartes);
-        return "leocartes/list";
+    public String searchWs(@RequestParam(required=false) String anneeUniversitaire, @RequestParam(required=false) String codeBaseMetier, @RequestParam(required=false) String nomSurCarte, @RequestParam(required=false, value="operator") String operatorStr, Model uiModel) {
+    	Integer operator = null;
+    	if(operatorStr != null && operatorStr.trim().length()!=0) {
+    		operator = Integer.valueOf(operatorStr);
+    	}
+    	if(codeBaseMetier != null && codeBaseMetier.trim().length()==0) {
+    		codeBaseMetier = null;
+    	}
+    	if(anneeUniversitaire != null && anneeUniversitaire.trim().length()==0) {
+    		anneeUniversitaire = null;
+    	}
+    	List<VNormandieLeocarte> vnormandieleocartes = wsSearchService.search(anneeUniversitaire, codeBaseMetier, nomSurCarte, operator);
+        uiModel.addAttribute("vnormandieleocartes", vnormandieleocartes);
+        return "vnormandieleocarte/list";
     }
     
     @RequestMapping
