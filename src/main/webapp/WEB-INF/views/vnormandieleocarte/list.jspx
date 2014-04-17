@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_fr_normandieuniv_cmnws_db_VNormandieLeocarte" items="${vnormandieleocartes}" z="zdUwLC5lHvhyCb5lYB6RBvOvhKc=">
         <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="leocode" update="false" z="IYsceHR83GfbJukGtP/LHNwCn+E=">
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_leocode" property="leocode" z="bZIK8gfVq8BR+6SZSHR76dQWBFs=" label="leocode"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_leocode" label="leocode" property="leocode" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_eppn" property="eppn" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" property="nomSurCarte" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>

@@ -26,7 +26,6 @@
         </menu:category>
         <menu:category id="c_controller" label="Test du Web Service" z="user-managed">
             <menu:item id="i_controller__searchwstestindex_id" label="Méthode Search" messageCode="global_generic" url="/searchwstest/index" z="user-managed"/>
-            <menu:item id="i_controller__vnormandieleocarteindex_id" messageCode="global_generic" url="/vnormandieleocarte/index" z="IghW3qtnYwTQRznaJYOrlUPYJ+k="/>
         </menu:category>
         <menu:category id="c_vnormandieleocarte" z="0w9rveKjI4FnBqGIEQ0R8VcmQGU=">
             <menu:item id="i_vnormandieleocarte_list" messageCode="global_menu_list" url="/vnormandieleocarte?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ET5v09/GMTjDcKBjd5ytsWVKIpA="/>
