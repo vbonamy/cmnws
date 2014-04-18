@@ -24,12 +24,6 @@ public class VNormandieLeocarte {
     @NotNull
     private String anneeUniversitaire;
 
-    @Column(columnDefinition = "BIT")
-    private Boolean autorisationtransmissionCrous;
-
-    @Column(columnDefinition = "BIT")
-    private Boolean autorisationDiffusionPhoto;
-
     @Column(columnDefinition = "text")
     private String typeContratLibelle;
 

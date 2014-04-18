@@ -23,22 +23,6 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.anneeUniversitaire = anneeUniversitaire;
     }
     
-    public Boolean VNormandieLeocarte.getAutorisationtransmissionCrous() {
-        return this.autorisationtransmissionCrous;
-    }
-    
-    public void VNormandieLeocarte.setAutorisationtransmissionCrous(Boolean autorisationtransmissionCrous) {
-        this.autorisationtransmissionCrous = autorisationtransmissionCrous;
-    }
-    
-    public Boolean VNormandieLeocarte.getAutorisationDiffusionPhoto() {
-        return this.autorisationDiffusionPhoto;
-    }
-    
-    public void VNormandieLeocarte.setAutorisationDiffusionPhoto(Boolean autorisationDiffusionPhoto) {
-        this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
-    }
-    
     public String VNormandieLeocarte.getTypeContratLibelle() {
         return this.typeContratLibelle;
     }

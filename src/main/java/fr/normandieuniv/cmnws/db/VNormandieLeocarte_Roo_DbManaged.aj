@@ -147,6 +147,12 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "centreSecuLibelle", length = 10)
     private String VNormandieLeocarte.centreSecuLibelle;
     
+    @Column(name = "autorisationtransmissionCrous")
+    private Boolean VNormandieLeocarte.autorisationtransmissionCrous;
+    
+    @Column(name = "autorisationDiffusionPhoto")
+    private Boolean VNormandieLeocarte.autorisationDiffusionPhoto;
+    
     public String VNormandieLeocarte.getTypePopulationLibelle() {
         return typePopulationLibelle;
     }
@@ -505,6 +511,22 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setCentreSecuLibelle(String centreSecuLibelle) {
         this.centreSecuLibelle = centreSecuLibelle;
+    }
+    
+    public Boolean VNormandieLeocarte.getAutorisationtransmissionCrous() {
+        return autorisationtransmissionCrous;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationtransmissionCrous(Boolean autorisationtransmissionCrous) {
+        this.autorisationtransmissionCrous = autorisationtransmissionCrous;
+    }
+    
+    public Boolean VNormandieLeocarte.getAutorisationDiffusionPhoto() {
+        return autorisationDiffusionPhoto;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationDiffusionPhoto(Boolean autorisationDiffusionPhoto) {
+        this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
     }
     
 }
