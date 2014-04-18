@@ -29,3 +29,4 @@ database reverse engineer --schema unable-to-obtain-connection --enableViews tru
 // Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2014-04-17 11:31:18
 database reverse engineer --schema unable-to-obtain-connection --enableViews true --includeTables V_NORMANDIE_LEOCARTE --package fr.normandieuniv.cmnws.db
 // Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2014-04-17 14:35:10
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2014-04-18 12:14:02

@@ -26,12 +26,12 @@
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_eppn" property="eppn" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" property="nomSurCarte" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_anneeUniversitaire" property="anneeUniversitaire" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationLibelle" property="typePopulationLibelle" z="AJKvZpFPaldFhTIkyTdYNYKNF4k=" render="false"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCnous" property="typePopulationCnous" z="HoYUyGaRuDMhBVESu7O2CooAq3s=" render="false"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" z="WnDj160py4lxHg00j0tRoC7lrAo=" render="false"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="bZIK8gfVq8BR+6SZSHR76dQWBFs=" render="false"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_buNo" property="buNo" z="j9U4HAOxcI0ex6AawI8c63XDmzA=" render="false"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" property="login" z="ab0/0eqcLvcAifGvs9wLBKv/yEo=" render="false"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationLibelle" property="typePopulationLibelle" render="false" z="user-managed"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCnous" property="typePopulationCnous" render="false" z="user-managed"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" render="false" z="user-managed"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" render="false" z="user-managed"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_buNo" property="buNo" render="false" z="user-managed"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" property="login" render="false" z="user-managed"/>
         </table:table>
     </page:list>
 </div>
