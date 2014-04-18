@@ -1,66 +1,64 @@
 Web Service générique pour connecteur EasyId Leocarte - personnels, étudiants et invités.
 
-La base de données doit être en MySQL et proposer une table (ou vue) nommée V_NORMANDIE_LEOCARTE et ayant cette structure : 
+La base de données doit être en Oracle et proposer une table (ou vue) nommée V_NORMANDIE_LEOCARTE et ayant cette structure : 
 
-+-------------------------------+--------------+------+-----+---------+-------+
-| Field                         | Type         | Null | Key | Default | Extra |
-+-------------------------------+--------------+------+-----+---------+-------+
-| typePopulationLibelle         | varchar(40)  | YES  |     | NULL    |       |
-| typePopulationCNOUS           | varchar(40)  | YES  |     | NULL    |       |
-| typeContratLibelle            | varchar(60)  | YES  |     | NULL    |       |
-| typeContratCode               | varchar(3)   | YES  |     | NULL    |       |
-| Leocode                       | varchar(13)  | YES  |     | NULL    |       |
-| prefixeLeoCode                | varchar(5)   | YES  |     | NULL    |       |
-| codeBaseMetier                | varchar(8)   | YES  |     | NULL    |       |
-| persID                        | text         | YES  |     | NULL    |       |
-| buNo                          | varchar(8)   | YES  |     | NULL    |       |
-| Login                         | varchar(20)  | NO   |     |         |       |
-| eduPersonAffiliation          | varchar(100) | NO   |     | NULL    |       |
-| eppn                          | varchar(34)  | NO   |     |         |       |
-| ine                           | varchar(11)  | YES  |     | NULL    |       |
-| nomSurCarte                   | varchar(40)  | YES  |     | NULL    |       |
-| nomUsuel                      | varchar(40)  | YES  |     | NULL    |       |
-| nomPatronymique               | varchar(40)  | NO   |     | NULL    |       |
-| prenom                        | varchar(40)  | YES  |     | NULL    |       |
-| dateNaissance                 | varchar(10)  | YES  |     | NULL    |       |
-| email                         | varchar(120) | YES  |     | NULL    |       |
-| telPortableNo                 | varchar(11)  | YES  |     | NULL    |       |
-| dateFinDroits                 | varchar(10)  | YES  |     | NULL    |       |
-| anneeUniversitaire            | char(4)      | NO   |     |         |       |
-| titreCarteLibelle             | text         | YES  |     | NULL    |       |
-| typeCarteCode                 | varchar(1)   | YES  |     | NULL    |       |
-| etablissementLibelle          | varchar(60)  | YES  |     | NULL    |       |
-| etablissementCode             | varchar(107) | YES  |     | NULL    |       |
-| etablissementRNE              | varchar(8)   | YES  |     | NULL    |       |
-| employeur                     | text         | YES  |     | NULL    |       |
-| structRattPrincCode           | varchar(6)   | YES  |     | NULL    |       |
-| structRattPrincRne            | varchar(8)   | YES  |     | NULL    |       |
-| structRattPrincLibel          | varchar(60)  | YES  |     | NULL    |       |
-| structRattSecondCode          | varchar(6)   | YES  |     | NULL    |       |
-| structRattSecondRne           | varchar(8)   | YES  |     | NULL    |       |
-| structRattSecondLibel         | varchar(60)  | YES  |     | NULL    |       |
-| structMereRattPrincCode       | varchar(6)   | YES  |     | NULL    |       |
-| structMereRattPrincRne        | varchar(8)   | YES  |     | NULL    |       |
-| structMereRattPrincLibel      | varchar(60)  | YES  |     | NULL    |       |
-| structMereRattSecondCode      | varchar(6)   | YES  |     | NULL    |       |
-| structMereRattSecondRne       | varchar(8)   | YES  |     | NULL    |       |
-| structMereRattSecondLibel     | varchar(60)  | YES  |     | NULL    |       |
-| corps                         | varchar(40)  | YES  |     | NULL    |       |
-| responsabiliteStruct          | text         | YES  |     | NULL    |       |
-| indiceInm                     | varchar(6)   | YES  |     | NULL    |       |
-| disciplineLibelle             | varchar(150) | YES  |     | NULL    |       |
-| disciplineCode                | varchar(150) | YES  |     | NULL    |       |
-| versionVetCode                | varchar(40)  | YES  |     | NULL    |       |
-| etapeLibelle                  | varchar(25)  | YES  |     | NULL    |       |
-| etapeCode                     | varchar(6)   | YES  |     | NULL    |       |
-| etapeSecondeCode              | varchar(6)   | YES  |     | NULL    |       |
-| versionVETSecondeCode         | varchar(40)  | YES  |     | NULL    |       |
-| etapeSecondeLibelle           | varchar(25)  | YES  |     | NULL    |       |
-| cgeCode                       | varchar(3)   | YES  |     | NULL    |       |
-| cgeLibelle                    | varchar(40)  | YES  |     | NULL    |       |
-| centreSecuCode                | varchar(3)   | YES  |     | NULL    |       |
-| centreSecuLibelle             | varchar(10)  | YES  |     | NULL    |       |
-| cotisationParticuliere        | text         | YES  |     | NULL    |       |
-| autorisationtransmissionCrous | tinyint(1)   | YES  |     | NULL    |       |
-| autorisationDiffusionPhoto    | tinyint(1)   | YES  |     | NULL    |       |
-+-------------------------------+--------------+------+-----+---------+-------+
+Nom                           NULL     Type
+----------------------------- -------- -------------
+TYPEPOPULATIONLIBELLE                  VARCHAR2(40)
+TYPEPOPULATIONCNOUS                    VARCHAR2(40)
+TYPECONTRATLIBELLE                     VARCHAR2(60)
+TYPECONTRATCODE                        VARCHAR2(3)
+ETABLISSEMENTCODE                      VARCHAR2(107)
+TYPECARTECODE                          VARCHAR2(2)
+TITRECARTELIBELLE                      VARCHAR2(60)
+LEOCODE                                VARCHAR2(13)
+PREFIXELEOCODE                         VARCHAR2(5)
+CODEBASEMETIER                         VARCHAR2(8)
+PERSID                                 VARCHAR2(30)
+BUNO                                   VARCHAR2(8)
+LOGIN                         NOT NULL VARCHAR2(20)
+EDUPERSONAFFILIATION          NOT NULL VARCHAR2(100)
+EPPN                                   VARCHAR2(34)
+INE                                    VARCHAR2(11)
+NOMSURCARTE                            VARCHAR2(40)
+NOMUSUEL                               VARCHAR2(40)
+NOMPATRONYMIQUE               NOT NULL VARCHAR2(40)
+PRENOM                                 VARCHAR2(40)
+DATENAISSANCE                          VARCHAR2(10)
+EMAIL                                  VARCHAR2(120)
+TELPORTABLENO                          VARCHAR2(11)
+DATEFINDROITS                          VARCHAR2(10)
+ANNEEUNIVERSITAIRE            NOT NULL VARCHAR2(4)
+ETABLISSEMENTLIBELLE                   VARCHAR2(60)
+ETABLISSEMENTRNE                       VARCHAR2(8)
+EMPLOYEUR                              VARCHAR2(60)
+STRUCTRATTPRINCCODE                    VARCHAR2(6)
+STRUCTRATTPRINCRNE                     VARCHAR2(8)
+STRUCTRATTPRINCLIBEL                   VARCHAR2(60)
+STRUCTRATTSECONDCODE                   VARCHAR2(6)
+STRUCTRATTSECONDRNE                    VARCHAR2(8)
+STRUCTRATTSECONDLIBEL                  VARCHAR2(60)
+STRUCTMERERATTPRINCCODE                VARCHAR2(6)
+STRUCTMERERATTPRINCRNE                 VARCHAR2(8)
+STRUCTMERERATTPRINCLIBEL               VARCHAR2(60)
+STRUCTMERERATTSECONDCODE               VARCHAR2(6)
+STRUCTMERERATTSECONDRNE                VARCHAR2(8)
+STRUCTMERERATTSECONDLIBEL              VARCHAR2(60)
+CORPS                                  VARCHAR2(40)
+RESPONSABILITESTRUCT                   VARCHAR2(60)
+INDICEINM                              VARCHAR2(6)
+DISCIPLINELIBELLE                      VARCHAR2(150)
+DISCIPLINECODE                         VARCHAR2(150)
+VERSIONVETCODE                         VARCHAR2(40)
+ETAPELIBELLE                           VARCHAR2(25)
+ETAPECODE                              VARCHAR2(6)
+ETAPESECONDECODE                       VARCHAR2(6)
+VERSIONVETSECONDECODE                  VARCHAR2(40)
+ETAPESECONDELIBELLE                    VARCHAR2(25)
+CGECODE                                VARCHAR2(3)
+CGELIBELLE                             VARCHAR2(40)
+CENTRESECUCODE                         VARCHAR2(3)
+CENTRESECULIBELLE                      VARCHAR2(10)
+COTISATIONPARTICULIERE                 VARCHAR2(60)
+AUTORISATIONTRANSMISSIONCROUS          NUMBER(1)
+AUTORISATIONDIFFUSIONPHOTO             NUMBER(1) 
