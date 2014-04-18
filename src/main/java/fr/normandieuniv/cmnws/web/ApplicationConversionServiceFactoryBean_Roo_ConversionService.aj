@@ -16,7 +16,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<VNormandieLeocarte, String> ApplicationConversionServiceFactoryBean.getVNormandieLeocarteToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<fr.normandieuniv.cmnws.db.VNormandieLeocarte, java.lang.String>() {
             public String convert(VNormandieLeocarte vNormandieLeocarte) {
-                return new StringBuilder().append(vNormandieLeocarte.getTypePopulationLibelle()).append(' ').append(vNormandieLeocarte.getTypePopulationCnous()).append(' ').append(vNormandieLeocarte.getPrefixeLeoCode()).append(' ').append(vNormandieLeocarte.getCodeBaseMetier()).toString();
+                return new StringBuilder().append(vNormandieLeocarte.getTypePopulationLibelle()).append(' ').append(vNormandieLeocarte.getTypePopulationCnous()).append(' ').append(vNormandieLeocarte.getEtablissementCode()).append(' ').append(vNormandieLeocarte.getTypeCarteCode()).toString();
             }
         };
     }

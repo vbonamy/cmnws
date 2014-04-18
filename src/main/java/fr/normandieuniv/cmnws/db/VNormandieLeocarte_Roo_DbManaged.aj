@@ -15,6 +15,12 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "typePopulationCNOUS", length = 40)
     private String VNormandieLeocarte.typePopulationCnous;
     
+    @Column(name = "etablissementCode", length = 107)
+    private String VNormandieLeocarte.etablissementCode;
+    
+    @Column(name = "typeCarteCode", length = 1)
+    private String VNormandieLeocarte.typeCarteCode;
+    
     @Column(name = "prefixeLeoCode", length = 5)
     private String VNormandieLeocarte.prefixeLeoCode;
     
@@ -24,7 +30,7 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "buNo", length = 8)
     private String VNormandieLeocarte.buNo;
     
-    @Column(name = "Login", length = 20)
+    @Column(name = "login", length = 20)
     @NotNull
     private String VNormandieLeocarte.login;
     
@@ -60,12 +66,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "dateFinDroits", length = 10)
     private String VNormandieLeocarte.dateFinDroits;
     
-    @Column(name = "typeCarteCode", length = 1)
-    private String VNormandieLeocarte.typeCarteCode;
-    
-    @Column(name = "etablissementCode", length = 107)
-    private String VNormandieLeocarte.etablissementCode;
-    
     @Column(name = "etablissementRNE", length = 8)
     private String VNormandieLeocarte.etablissementRne;
     
@@ -99,7 +99,7 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "structMereRattSecondCode", length = 6)
     private String VNormandieLeocarte.structMereRattSecondCode;
     
-    @Column(name = "structMereRattSecondRne")
+    @Column(name = "structMereRattSecondRne", length = 8)
     private String VNormandieLeocarte.structMereRattSecondRne;
     
     @Column(name = "structMereRattSecondLibel", length = 60)
@@ -161,6 +161,22 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setTypePopulationCnous(String typePopulationCnous) {
         this.typePopulationCnous = typePopulationCnous;
+    }
+    
+    public String VNormandieLeocarte.getEtablissementCode() {
+        return etablissementCode;
+    }
+    
+    public void VNormandieLeocarte.setEtablissementCode(String etablissementCode) {
+        this.etablissementCode = etablissementCode;
+    }
+    
+    public String VNormandieLeocarte.getTypeCarteCode() {
+        return typeCarteCode;
+    }
+    
+    public void VNormandieLeocarte.setTypeCarteCode(String typeCarteCode) {
+        this.typeCarteCode = typeCarteCode;
     }
     
     public String VNormandieLeocarte.getPrefixeLeoCode() {
@@ -273,22 +289,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setDateFinDroits(String dateFinDroits) {
         this.dateFinDroits = dateFinDroits;
-    }
-    
-    public String VNormandieLeocarte.getTypeCarteCode() {
-        return typeCarteCode;
-    }
-    
-    public void VNormandieLeocarte.setTypeCarteCode(String typeCarteCode) {
-        this.typeCarteCode = typeCarteCode;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementCode() {
-        return etablissementCode;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementCode(String etablissementCode) {
-        this.etablissementCode = etablissementCode;
     }
     
     public String VNormandieLeocarte.getEtablissementRne() {

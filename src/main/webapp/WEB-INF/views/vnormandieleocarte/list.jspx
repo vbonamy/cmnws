@@ -32,6 +32,8 @@
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" render="false" z="user-managed"/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_buNo" property="buNo" render="false" z="user-managed"/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" property="login" render="false" z="user-managed"/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_etablissementCode" property="etablissementCode" render="false" z="AJccNYoHYvhcBKDOXkLVq8R7RoU="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeCarteCode" property="typeCarteCode" render="false" z="0DPyLxY+WPd1WA/FFqf0AFlUNDM="/>
         </table:table>
     </page:list>
 </div>
