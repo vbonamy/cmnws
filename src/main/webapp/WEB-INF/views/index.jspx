@@ -23,16 +23,16 @@
 
   <util:panel id="title" title="Bienvenue sur CPMN WS">
     <h3>
-      Bienvenue sur CPMN WS
+      Bienvenue sur CMN WS
     </h3>
     <p>
-     	Cette application est destinée à fournir un WS d'interrogation des bases du SI pour CPMN dans le cadre de la mise en place de la Leocarte.
+     	Cette application est destinée à fournir un WS d'interrogation des bases du SI pour CMN dans le cadre de la mise en place de la Leocarte.
     </p>
     <p>
-    	Son accès doit donc être limité à l'application de gestion CPMN (installée sur les machines du PRES Normand) et aux administrateurs de l'établissement concerné.
+    	Son accès doit donc être limité à l'application de gestion CMN (installée sur les machines du PRES Normand) et aux administrateurs de l'établissement concerné.
     </p>
     <p>
-    	Une installation par SI dans chaque établissement est requise - le fichier de configuration à modifier pour l'accés à la vue de la base de données Apogée/Cocktail se fait dans le fichier <b>database.properties</b>.  
+    	Une installation par SI dans chaque établissement est requise - le fichier de configuration à modifier pour l'accés à la vue générique de la base de données se fait dans le fichier <b>database.properties</b>.  
     </p>
   </util:panel>
 </div>
