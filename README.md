@@ -25,10 +25,10 @@ La base de données doit être en MySQL et proposer une table (ou vue) nommée V
 | nomUsuel                      | varchar(40)  | YES  |     | NULL    |       |
 | nomPatronymique               | varchar(40)  | NO   |     | NULL    |       |
 | prenom                        | varchar(40)  | YES  |     | NULL    |       |
-| dateNaissance                 | varchar(10)  | YES  |     | NULL    |       |
+| dateNaissance                 | date         | YES  |     | NULL    |       |
 | email                         | varchar(120) | YES  |     | NULL    |       |
 | telPortableNo                 | varchar(11)  | YES  |     | NULL    |       |
-| dateFinDroits                 | varchar(10)  | YES  |     | NULL    |       |
+| dateFinDroits                 | date         | YES  |     | NULL    |       |
 | anneeUniversitaire            | varchar(4)   | YES  |     | NULL    |       |
 | etablissementLibelle          | varchar(60)  | YES  |     | NULL    |       |
 | etablissementRNE              | varchar(8)   | YES  |     | NULL    |       |
