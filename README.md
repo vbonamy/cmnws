@@ -24,10 +24,10 @@ NOMSURCARTE                            VARCHAR2(40)
 NOMUSUEL                               VARCHAR2(40)
 NOMPATRONYMIQUE               NOT NULL VARCHAR2(40)
 PRENOM                                 VARCHAR2(40)
-DATENAISSANCE                          VARCHAR2(10)
+DATENAISSANCE                          DATE
 EMAIL                                  VARCHAR2(120)
 TELPORTABLENO                          VARCHAR2(11)
-DATEFINDROITS                          VARCHAR2(10)
+DATEFINDROITS                          DATE
 ANNEEUNIVERSITAIRE            NOT NULL VARCHAR2(4)
 ETABLISSEMENTLIBELLE                   VARCHAR2(60)
 ETABLISSEMENTRNE                       VARCHAR2(8)
@@ -62,3 +62,4 @@ CENTRESECULIBELLE                      VARCHAR2(10)
 COTISATIONPARTICULIERE                 VARCHAR2(60)
 AUTORISATIONTRANSMISSIONCROUS          NUMBER(1)
 AUTORISATIONDIFFUSIONPHOTO             NUMBER(1) 
+
