@@ -4,8 +4,12 @@
 package fr.normandieuniv.cmnws.db;
 
 import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
+import java.util.Date;
 import javax.persistence.Column;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
+import org.springframework.format.annotation.DateTimeFormat;
 
 privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
@@ -57,14 +61,18 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "prenom", length = 40)
     private String VNormandieLeocarte.prenom;
     
-    @Column(name = "dateNaissance", length = 10)
-    private String VNormandieLeocarte.dateNaissance;
+    @Column(name = "dateNaissance")
+    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(style = "M-")
+    private Date VNormandieLeocarte.dateNaissance;
     
     @Column(name = "email", length = 120)
     private String VNormandieLeocarte.email;
     
-    @Column(name = "dateFinDroits", length = 10)
-    private String VNormandieLeocarte.dateFinDroits;
+    @Column(name = "dateFinDroits")
+    @Temporal(TemporalType.DATE)
+    @DateTimeFormat(style = "M-")
+    private Date VNormandieLeocarte.dateFinDroits;
     
     @Column(name = "etablissementRNE", length = 8)
     private String VNormandieLeocarte.etablissementRne;
@@ -273,11 +281,11 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.prenom = prenom;
     }
     
-    public String VNormandieLeocarte.getDateNaissance() {
+    public Date VNormandieLeocarte.getDateNaissance() {
         return dateNaissance;
     }
     
-    public void VNormandieLeocarte.setDateNaissance(String dateNaissance) {
+    public void VNormandieLeocarte.setDateNaissance(Date dateNaissance) {
         this.dateNaissance = dateNaissance;
     }
     
@@ -289,11 +297,11 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.email = email;
     }
     
-    public String VNormandieLeocarte.getDateFinDroits() {
+    public Date VNormandieLeocarte.getDateFinDroits() {
         return dateFinDroits;
     }
     
-    public void VNormandieLeocarte.setDateFinDroits(String dateFinDroits) {
+    public void VNormandieLeocarte.setDateFinDroits(Date dateFinDroits) {
         this.dateFinDroits = dateFinDroits;
     }
     
