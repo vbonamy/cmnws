@@ -341,7 +341,6 @@
                             <excludes>
                                 <exclude>dbre.xml</exclude>
                             </excludes>
-                            <directory>src/main/resources</directory>
                         </resource>
                     </webResources>
                 </configuration>
