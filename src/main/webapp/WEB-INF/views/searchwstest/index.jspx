@@ -51,4 +51,46 @@
 		</form>
 
 	</util:panel>
+	
+	
+	<util:panel title="Paramètres en entrée pour le WS" id="description-ws-input">
+	
+	<h2>Liste des paramètres en entrée du webservice :</h2>
+	<h3>anneeUniversitaire (==anneeUniv)</h3>
+	<p>o Type : Integer</p>
+	<p>o Contient la valeur de l'année universitaire</p>
+	<p>o Exemple de valeur : 2012</p>
+	<h3>codeBaseMétier (==externalReference)</h3>
+	<p>o Type : String</p>
+	<p>o Contient la valeur du n°étudiant/agent/invité/.... Il s'agit de la valeur exacte</p>
+	<p>o Exemple : 20121234</p>
+	<h3>nomSurCarte (==lastname)</h3>
+	<p>o Type : String</p>
+	<p>o Contient le nom d'usage ou le début du nom d'usage</p>
+	<p>o Exemple : mart</p>
+	<h3>operator (==searchType)</h3>
+	<p>o Type Integer</p>
+	<p>o Définit si l'opérateur de recherche entre les champs externalReference et lastname est AND ou OR. N'est utilisé que si les 2 champs externalReference et lastname sont remplis</p>
+	<p>o Valeurs possibles :</p>
+	<ul>
+	<li>      0 pour AND</li>
+	<li>      1 pour OR</li>
+	</ul>
+	<h2>Les règles de gestion à appliquer sont les suivantes :</h2>
+	<p> -  Le champ anneeUniv est obligatoire. Si il n'est pas fourni dans l'appel, une erreur doit être retounée. Seules les lignes de vos SI correspondants à cette année universitaire doivent être envoyée</p>
+	<p> -  La recherche sur le champ lastname se fait différemment en fonction de la longueur de la valeur passée</p>
+	<ul>
+	<li>Si la valeur fait moins de 4 caractères, la recherche se réalise sous la forme d'une égalité</li>
+	<li>Si la valeur fait 4 caractères ou plus, la recherche se réalise sous la forme "commence par""</li>
+	</ul>
+	<p> -  La recherche sur les 2 champs se fait toujours de manière case insensitive</p>
+	<p> -  Les cas d'appels sont les suivants :</p>
+	<ul>
+	<li>Aucun des champs n'est rempli externalReference et lastname : il faut renvoyer tous les étudiants de l'année passée en paramètre</li>
+	<li>Si un seul des champs externalReference et lastname est rempli, le filtrage des étudiants se fait sur le seul paramètre saisi (et sur l'année universitaire)</li>
+	<li>Si les 2 champs externalReference et lastname sont remplis, le filtrage des étudiants se fait sur les 2 paramètres en appliquant l'opérateur logique défini dans le paramètre searchType. Le filtre sur l'année universitaire doit également être appliqué. </li>
+	</ul>
+		
+	</util:panel>	
+	
 </div>
