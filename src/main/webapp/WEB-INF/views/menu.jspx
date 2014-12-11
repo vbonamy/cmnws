@@ -29,11 +29,10 @@
         </menu:category>
         <menu:category id="c_vnormandieleocarte" z="0w9rveKjI4FnBqGIEQ0R8VcmQGU=">
             <menu:item id="i_vnormandieleocarte_list" messageCode="global_menu_list" url="/vnormandieleocarte?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ET5v09/GMTjDcKBjd5ytsWVKIpA="/>
-            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequals" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEquals&amp;form" z="ROqWgTrNujfSpDYzd6WBHhZ19j4="/>
-            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequalsandcodebasemetierequals" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEqualsAndCodeBaseMetierEquals&amp;form" z="umkBw4VJat2MWKUb3jndHu5si88="/>
-            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequalsandcodebasemetierequalsandnomsurcartelike" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike&amp;form" z="fUnZjNDntVt9rwmvWFztCvPWFEI="/>
-            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequalsandcodebasemetierequalsoranneeuniversitaireequalsandnomsurcartelike" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike&amp;form" z="e23SRiMIONActBxp6tFKboB50yk="/>
-            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequalsandnomsurcartelike" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEqualsAndNomSurCarteLike&amp;form" z="eCuhM1Yawxs7d7c0L5JH0B82oWA="/>
+            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequals" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEquals&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="f9Vcr/USMNPmV4uP5hWwMkhoPOA="/>
+            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequalsandeppnequals" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEqualsAndEppnEquals&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="1QXKFvlCH8134lEln1K+f7H1+Nc="/>
+            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequalsandeppnequalsandnomsurcartelike" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEqualsAndEppnEqualsAndNomSurCarteLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="SIm+0lrG5HLFH1xwmGTvwS6Gp7c="/>
+            <menu:item id="fi_vnormandieleocarte_anneeuniversitaireequalsandnomsurcartelike" messageCode="global_menu_find" url="/vnormandieleocarte?find=ByAnneeUniversitaireEqualsAndNomSurCarteLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="vhLKV7XNgOouwu3WK2RePDwfdUE="/>
         </menu:category>
     </menu:menu>
 </div>

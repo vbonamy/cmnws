@@ -21,9 +21,9 @@
   <jsp:directive.page contentType="text/html;charset=UTF-8" />
   <jsp:output omit-xml-declaration="yes" />
 
-  <util:panel id="title" title="Bienvenue sur CPMN WS">
+  <util:panel id="title" title="Bienvenue sur CMN WS">
     <h3>
-      Bienvenue sur CMN WS
+      Bienvenue sur Carte Multiservice Normand Web Service - avcec utilisation de EduPersonPrincipalName (eppn)
     </h3>
     <p>
      	Cette application est destinée à fournir un WS d'interrogation des bases du SI pour CMN dans le cadre de la mise en place de la Leocarte.

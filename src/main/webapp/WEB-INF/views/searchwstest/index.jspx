@@ -36,7 +36,7 @@
 				anneeUniversitaire : <input name="anneeUniversitaire" />
 			</p>
 			<p>
-				codeBaseMetier : <input name="codeBaseMetier" />
+				eppn : <input name="eppn" />
 			</p>
 			<p>
 				nomSurCarte : <input name="nomSurCarte" />

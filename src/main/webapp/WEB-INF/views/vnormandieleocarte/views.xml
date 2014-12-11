@@ -17,8 +17,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 
--->
-<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+--><!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
     <definition extends="default" name="vnormandieleocarte/index">
         <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/index.jspx"/>
@@ -43,5 +42,14 @@
     </definition>
 <definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike">
         <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEquals">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEquals.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEqualsAndNomSurCarteLike">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEqualsAndNomSurCarteLike.jspx"/>
+    </definition>
+<definition extends="default" name="vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike">
+        <put-attribute name="body" value="/WEB-INF/views/vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike.jspx"/>
     </definition>
 </tiles-definitions>

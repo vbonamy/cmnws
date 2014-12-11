@@ -35,18 +35,18 @@ public class VNormandieLeocarteWsSearchService {
 	private static Logger log = Logger.getLogger(VNormandieLeocarteWsSearchService.class);
 
 	@WebMethod
-	public List<VNormandieLeocarte> search(@WebParam(name = "anneeUniversitaire") String anneeUniversitaire, @WebParam(name = "codeBaseMetier") String codeBaseMetier, @WebParam(name = "nomSurCarte") String nom,
+	public List<VNormandieLeocarte> search(@WebParam(name = "anneeUniversitaire") String anneeUniversitaire, @WebParam(name = "eppn") String eppn, @WebParam(name = "nomSurCarte") String nom,
 			@WebParam(name = "operator") Integer operator) {
 
 		long startTime = System.currentTimeMillis();	
-		log.info("search(" + anneeUniversitaire + ", " + codeBaseMetier + ", " + nom + ", " + operator + ")");
+		log.info("search(" + anneeUniversitaire + ", " + eppn + ", " + nom + ", " + operator + ")");
 		
 		if(nom != null && nom.trim().isEmpty())
 			nom = null;
 		
 		
-		if(codeBaseMetier != null && codeBaseMetier.trim().isEmpty())
-			codeBaseMetier = null;
+		if(eppn != null && eppn.trim().isEmpty())
+			eppn = null;
 		
 		List<VNormandieLeocarte> urcpmns = null;
 
@@ -54,16 +54,16 @@ public class VNormandieLeocarteWsSearchService {
 			throw new RuntimeException("Le paramètre anneeUniversitaire doit être renseigné");
 		}
 
-		if (codeBaseMetier == null && nom == null) {
+		if (eppn == null && nom == null) {
 			urcpmns = VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEquals(anneeUniversitaire)
 					.getResultList();
 		}
 
-		else if (codeBaseMetier != null && nom == null) {
-			urcpmns = VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals(anneeUniversitaire, codeBaseMetier).getResultList();
+		else if (eppn != null && nom == null) {
+			urcpmns = VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEquals(anneeUniversitaire, eppn).getResultList();
 		}
 
-		else if (codeBaseMetier == null && nom != null) {
+		else if (eppn == null && nom != null) {
 			if (nom.length() >= 4) {
 				nom = nom + '%';
 			}
@@ -71,23 +71,23 @@ public class VNormandieLeocarteWsSearchService {
 						anneeUniversitaire, nom).getResultList();
 		}
 
-		else if (codeBaseMetier != null && nom != null) {
+		else if (eppn != null && nom != null) {
 			if (operator == null) {
-				throw new RuntimeException("codeBaseMetier et nom sont renseignés, operator doit être renseigné et doit être égal à 0 ou 1");
+				throw new RuntimeException("eppn et nom sont renseignés, operator doit être renseigné et doit être égal à 0 ou 1");
 			}
 			if (operator.equals(0)) {
 				if (nom.length() >= 4) {
 					nom = nom + '%';
 				}
-				urcpmns = VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(
-									anneeUniversitaire, codeBaseMetier, nom).getResultList();
+				urcpmns = VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEqualsAndNomSurCarteLike(
+									anneeUniversitaire, eppn, nom).getResultList();
 			} else if (operator.equals(1)) {
 				if (nom.length() >= 4) {
 					nom = nom + '%';
 				}
 				urcpmns = VNormandieLeocarte
-							.findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike(
-									anneeUniversitaire, codeBaseMetier, nom).getResultList();
+							.findVNormandieLeocartesByAnneeUniversitaireEqualsAndEppnEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike(
+									anneeUniversitaire, eppn, nom).getResultList();
 			}
 		}
 
