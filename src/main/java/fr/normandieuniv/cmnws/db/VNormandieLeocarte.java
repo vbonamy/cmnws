@@ -5,15 +5,23 @@ import javax.persistence.EntityManager;
 import javax.persistence.Id;
 import javax.persistence.TypedQuery;
 import javax.validation.constraints.NotNull;
+
 import org.springframework.roo.addon.dbre.RooDbManaged;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
 
+import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
+
+/**
+ * ATTENTION :
+ * On surcharge les finders de ROO car on ne souhaite pas que le like rajoute lui-même les % au début et fin de nomSurCarte !
+ * @see VNormandieLeocarteWsSearchService
+ */
 @RooJavaBean
 @RooToString
 @RooDbManaged(automaticallyDelete = true)
-@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike" })
+@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" })
 public class VNormandieLeocarte {
 
     @Id
@@ -56,13 +64,6 @@ public class VNormandieLeocarte {
         if (codeBaseMetier == null || codeBaseMetier.length() == 0) throw new IllegalArgumentException("The codeBaseMetier argument is required");
         if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");
         if (nomSurCarte == null || nomSurCarte.length() == 0) throw new IllegalArgumentException("The nomSurCarte argument is required");
-        nomSurCarte = nomSurCarte.replace('*', '%');
-        if (nomSurCarte.charAt(0) != '%') {
-            nomSurCarte = "%" + nomSurCarte;
-        }
-        if (nomSurCarte.charAt(nomSurCarte.length() - 1) != '%') {
-            nomSurCarte = nomSurCarte + "%";
-        }
         EntityManager em = VNormandieLeocarte.entityManager();
         TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND o.codeBaseMetier = :codeBaseMetier  OR o.anneeUniversitaire = :anneeUniversitaire  AND LOWER(o.nomSurCarte) LIKE LOWER(:nomSurCarte)", VNormandieLeocarte.class);
         q.setParameter("anneeUniversitaire", anneeUniversitaire);
@@ -71,4 +72,26 @@ public class VNormandieLeocarte {
         q.setParameter("nomSurCarte", nomSurCarte);
         return q;
     }
+    
+    public static TypedQuery<VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(String anneeUniversitaire, String codeBaseMetier, String nomSurCarte) {
+        if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");
+        if (codeBaseMetier == null || codeBaseMetier.length() == 0) throw new IllegalArgumentException("The codeBaseMetier argument is required");
+        EntityManager em = VNormandieLeocarte.entityManager();
+        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND o.codeBaseMetier = :codeBaseMetier  AND LOWER(o.nomSurCarte) LIKE LOWER(:nomSurCarte)",VNormandieLeocarte.class);
+        q.setParameter("anneeUniversitaire", anneeUniversitaire);
+        q.setParameter("codeBaseMetier", codeBaseMetier);
+        q.setParameter("nomSurCarte", nomSurCarte);
+        return q;
+    }
+    
+    public static TypedQuery<VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike(String anneeUniversitaire, String nomSurCarte) {
+        if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");
+        if (nomSurCarte == null || nomSurCarte.length() == 0) throw new IllegalArgumentException("The nomSurCarte argument is required");
+        EntityManager em = VNormandieLeocarte.entityManager();
+        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND LOWER(o.nomSurCarte) LIKE LOWER(:nomSurCarte)",VNormandieLeocarte.class);
+        q.setParameter("anneeUniversitaire", anneeUniversitaire);
+        q.setParameter("nomSurCarte", nomSurCarte);
+        return q;
+    }
+    
 }

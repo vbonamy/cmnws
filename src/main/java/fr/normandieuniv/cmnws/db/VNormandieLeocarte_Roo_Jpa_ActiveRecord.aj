@@ -14,6 +14,8 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager VNormandieLeocarte.entityManager;
     
+    public static final List<String> VNormandieLeocarte.fieldNames4OrderClauseFilter = java.util.Arrays.asList("leocode", "anneeUniversitaire", "autorisationtransmissionCrous", "autorisationDiffusionPhoto", "typeContratLibelle", "typeContratCode", "persID", "telPortableNo", "titreCarteLibelle", "etablissementLibelle", "employeur", "responsabiliteStruct", "cotisationParticuliere");
+    
     public static final EntityManager VNormandieLeocarte.entityManager() {
         EntityManager em = new VNormandieLeocarte().entityManager;
         if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
@@ -28,6 +30,17 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
         return entityManager().createQuery("SELECT o FROM VNormandieLeocarte o", VNormandieLeocarte.class).getResultList();
     }
     
+    public static List<VNormandieLeocarte> VNormandieLeocarte.findAllVNormandieLeocartes(String sortFieldName, String sortOrder) {
+        String jpaQuery = "SELECT o FROM VNormandieLeocarte o";
+        if (fieldNames4OrderClauseFilter.contains(sortFieldName)) {
+            jpaQuery = jpaQuery + " ORDER BY " + sortFieldName;
+            if ("ASC".equalsIgnoreCase(sortOrder) || "DESC".equalsIgnoreCase(sortOrder)) {
+                jpaQuery = jpaQuery + " " + sortOrder;
+            }
+        }
+        return entityManager().createQuery(jpaQuery, VNormandieLeocarte.class).getResultList();
+    }
+    
     public static VNormandieLeocarte VNormandieLeocarte.findVNormandieLeocarte(String leocode) {
         if (leocode == null || leocode.length() == 0) return null;
         return entityManager().find(VNormandieLeocarte.class, leocode);
@@ -35,6 +48,17 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
     
     public static List<VNormandieLeocarte> VNormandieLeocarte.findVNormandieLeocarteEntries(int firstResult, int maxResults) {
         return entityManager().createQuery("SELECT o FROM VNormandieLeocarte o", VNormandieLeocarte.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+    }
+    
+    public static List<VNormandieLeocarte> VNormandieLeocarte.findVNormandieLeocarteEntries(int firstResult, int maxResults, String sortFieldName, String sortOrder) {
+        String jpaQuery = "SELECT o FROM VNormandieLeocarte o";
+        if (fieldNames4OrderClauseFilter.contains(sortFieldName)) {
+            jpaQuery = jpaQuery + " ORDER BY " + sortFieldName;
+            if ("ASC".equalsIgnoreCase(sortOrder) || "DESC".equalsIgnoreCase(sortOrder)) {
+                jpaQuery = jpaQuery + " " + sortOrder;
+            }
+        }
+        return entityManager().createQuery(jpaQuery, VNormandieLeocarte.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
     @Transactional
