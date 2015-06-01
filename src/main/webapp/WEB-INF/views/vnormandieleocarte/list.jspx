@@ -22,9 +22,9 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_fr_normandieuniv_cmnws_db_VNormandieLeocarte" items="${vnormandieleocartes}" z="zdUwLC5lHvhyCb5lYB6RBvOvhKc=">
         <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="login" update="false" z="xn1Xk0yFbAqTMSmAO8nOHFLOVmI=">
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typepopulationcode" property="typepopulationcode" z="Cr57o0zmgV+8wMdES9+5zCYYwpQ="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typepopulationcnous" property="typepopulationcnous" z="iciHNeVhfh4tBWKAI16A7po8J6A="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_etablissementcode" property="etablissementcode" z="fUJxOnyysTalUoC0NI0rb/zjgjc="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" property="login" z="iciHNeVhfh4tBWKAI16A7po8J6A="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="Cr57o0zmgV+8wMdES9+5zCYYwpQ="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomsurcarte" property="nomsurcarte" z="fUJxOnyysTalUoC0NI0rb/zjgjc="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typevisuelcode" property="typevisuelcode" z="t/HdaceKQmy2kevsgN6LGB73ZIo="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titrecartelibelle" property="titrecartelibelle" z="X777XqUP1PoM4WNi4nM5ZV3Y0vU="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeleocode" property="prefixeleocode" z="OvAu7+WLFnXSftHlCzyfrtiNWpw="/>
