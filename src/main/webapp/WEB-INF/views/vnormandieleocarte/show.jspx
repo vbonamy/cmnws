@@ -23,9 +23,6 @@
     <page:show create="false" delete="false" id="ps_fr_normandieuniv_cmnws_db_VNormandieLeocarte" list="false" object="${vnormandieleocarte_}" path="/vnormandieleocarte" update="false" z="user-managed">
         <field:display field="anneeUniversitaire" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_anneeUniversitaire" object="${vnormandieleocarte_}" z="KGn9yYxmvXf58Dc3A6rlemPSJHA="/>
         <field:display field="cotisationParticuliere" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_cotisationParticuliere" object="${vnormandieleocarte_}" z="GLHFFQugm+DWhpA7O3aMMP7OD8o="/>
-        <field:display field="typeContratLibelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeContratLibelle" object="${vnormandieleocarte_}" z="YW22TLObqKNLEw8gg7NOEkLvvzI="/>
-        <field:display field="typeContratCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeContratCode" object="${vnormandieleocarte_}" z="QWulcPmVIJe8Xo38z725tLQ5aFA="/>
-        <field:display field="telPortableNo" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_telPortableNo" object="${vnormandieleocarte_}" z="jhj9LDUwB4H0QgMUc+M8PbeEkdU="/>
         <field:display field="titreCarteLibelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titreCarteLibelle" object="${vnormandieleocarte_}" z="EHTEUB6Bp/uO63G10RmlOnM76QE="/>
         <field:display field="etablissementLibelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_etablissementLibelle" object="${vnormandieleocarte_}" z="LYw4vDtkEQIfMJm5O3bBya0TGeE="/>
         <field:display field="employeur" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_employeur" object="${vnormandieleocarte_}" z="/+I8OMl2zSf3r/ad+z3Wzih4aFE="/>
@@ -33,37 +30,27 @@
         <field:display field="persID" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_persID" object="${vnormandieleocarte_}" z="TY9SWvrRuPftTSmt7d27hYzIwCs="/>
         <field:display field="autorisationtransmissionCrous" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_autorisationtransmissionCrous" object="${vnormandieleocarte_}" z="WyUjQV3S836CHke3JijORoQJxNs="/>
         <field:display field="autorisationDiffusionPhoto" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_autorisationDiffusionPhoto" object="${vnormandieleocarte_}" z="0jS/LpfhR2DVXoMUH6iFsOQPO0k="/>
-        <field:display field="typePopulationLibelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationLibelle" object="${vnormandieleocarte_}" z="v3oZ5LB5Sf09dvLmXw1gGXhc4VY="/>
+        <field:display field="typePopulationCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCode" object="${vnormandieleocarte_}" z="jSIpR3+ANcOK9sWWK7fQm8oAs8c="/>
         <field:display field="typePopulationCnous" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCnous" object="${vnormandieleocarte_}" z="4FY6Ua8NZdfcpAmX5v9Rea4Wxus="/>
         <field:display field="etablissementCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_etablissementCode" object="${vnormandieleocarte_}" z="3PZrkpBjtzg2ggINaEMpD+1AR9k="/>
-        <field:display field="typeCarteCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeCarteCode" object="${vnormandieleocarte_}" z="CmOfsmTrNjT8RESDZlMKfRtlM+w="/>
+        <field:display field="typeVisuelCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeVisuelCode" object="${vnormandieleocarte_}" z="WEVUpx07zah5X2BAqIlINGT3R5c="/>
         <field:display field="prefixeLeoCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" object="${vnormandieleocarte_}" z="RPt0Wk6iNVp8/lszGVa8uWjuI38="/>
         <field:display field="codeBaseMetier" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" object="${vnormandieleocarte_}" z="MMyQmMnQj8HXXLa91RIrGDv9N3c="/>
         <field:display field="buNo" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_buNo" object="${vnormandieleocarte_}" z="IGQiTW/qN1TZSHIst4VaMk833BA="/>
-        <field:display field="login" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" object="${vnormandieleocarte_}" z="7f9GeHaMXQ8sX172ovKqeiMFMpw="/>
         <field:display field="eduPersonAffiliation" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_eduPersonAffiliation" object="${vnormandieleocarte_}" z="ADu8Oj0vY6l1BQF4LgjcJySrFUs="/>
         <field:display field="eppn" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_eppn" object="${vnormandieleocarte_}" z="JCYtpx1aFBNFVXxX0bKqTNvkZ78="/>
         <field:display field="ine" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_ine" object="${vnormandieleocarte_}" z="jWd1HVOTKUzPqjX/UXaVLnK1NRk="/>
         <field:display field="nomSurCarte" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" object="${vnormandieleocarte_}" z="qoGlghBW8BO+l4OPBESw8Vf+N1E="/>
-        <field:display field="nomUsuel" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomUsuel" object="${vnormandieleocarte_}" z="zaX+rWX/4IkjYKD96bLk/B4jltw="/>
-        <field:display field="nomPatronymique" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomPatronymique" object="${vnormandieleocarte_}" z="TAwnLnLbJtIkuS/RaGsnaGKn+xI="/>
         <field:display field="prenom" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prenom" object="${vnormandieleocarte_}" z="gImV/jMeWo7Ei3IN/rkxuyLWgNw="/>
         <field:display date="true" dateTimePattern="${VNormandieLeocarte__datenaissance_date_format}" field="dateNaissance" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_dateNaissance" object="${vnormandieleocarte_}" z="N2vo26Gk7ycDe4/GwdWbB8v0yRM="/>
         <field:display field="email" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_email" object="${vnormandieleocarte_}" z="NxLNruKgKpx3Z5Y7gMrmWfDfQhk="/>
         <field:display date="true" dateTimePattern="${VNormandieLeocarte__datefindroits_date_format}" field="dateFinDroits" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_dateFinDroits" object="${vnormandieleocarte_}" z="U5OxmEZG5zcMj6Ts4R47QBATg8k="/>
         <field:display field="etablissementRne" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_etablissementRne" object="${vnormandieleocarte_}" z="YyP64zbNvKZosAp9Kf53Eo16Vow="/>
-        <field:display field="structRattPrincCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structRattPrincCode" object="${vnormandieleocarte_}" z="oaViFdNcyKlgdmKknk+37AZbSnU="/>
-        <field:display field="structRattPrincRne" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structRattPrincRne" object="${vnormandieleocarte_}" z="t83w5JW6v4SKuv0EPITcERaZI5c="/>
-        <field:display field="structRattPrincLibel" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structRattPrincLibel" object="${vnormandieleocarte_}" z="kHNYxjXSynSskQ5sbROefpSXYF8="/>
-        <field:display field="structRattSecondCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structRattSecondCode" object="${vnormandieleocarte_}" z="bx8FeQNcG/pS2alTbEIqsrUv7Bo="/>
-        <field:display field="structRattSecondRne" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structRattSecondRne" object="${vnormandieleocarte_}" z="ufDU1MLutH/IcWowjy+U6esXXCQ="/>
-        <field:display field="structRattSecondLibel" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structRattSecondLibel" object="${vnormandieleocarte_}" z="tqfIfH0X0ojpQVe4aV51F3beeKM="/>
-        <field:display field="structMereRattPrincCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structMereRattPrincCode" object="${vnormandieleocarte_}" z="oyd5DQwiS3DuLOsSGfKGqH6TBu0="/>
-        <field:display field="structMereRattPrincRne" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structMereRattPrincRne" object="${vnormandieleocarte_}" z="cEeVjP+ARLzCkkzn/B50GYhgBD8="/>
-        <field:display field="structMereRattPrincLibel" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structMereRattPrincLibel" object="${vnormandieleocarte_}" z="x9M8aAt/1+rSGUA8gfH1uG1CPNE="/>
-        <field:display field="structMereRattSecondCode" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structMereRattSecondCode" object="${vnormandieleocarte_}" z="RH8zEchdGo+wNON4F0ym2fHcqqY="/>
-        <field:display field="structMereRattSecondRne" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structMereRattSecondRne" object="${vnormandieleocarte_}" z="7YeEIdO2Ul+oG+WT55DmtQCWaro="/>
-        <field:display field="structMereRattSecondLibel" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_structMereRattSecondLibel" object="${vnormandieleocarte_}" z="W3H2wGCWKQCmLrvg/dp/0BS/cgc="/>
+        <field:display field="affectation1code" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_affectation1code" object="${vnormandieleocarte_}" z="978HQpWhp82uxoa6n1pzRWmeu0E="/>
+        <field:display field="affectationRne" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_affectationRne" object="${vnormandieleocarte_}" z="Hbs6HauqPEsTJNNtGw179ptjICU="/>
+        <field:display field="affectation1libelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_affectation1libelle" object="${vnormandieleocarte_}" z="qHs44R6MHmbCpsTSZu1QPyyYA3Q="/>
+        <field:display field="affectation2code" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_affectation2code" object="${vnormandieleocarte_}" z="GHhdo4YDk+S9hANvzWSc9DKJJeI="/>
+        <field:display field="affectation2libelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_affectation2libelle" object="${vnormandieleocarte_}" z="Q47t3eimbVR5rVgBO3l11Z1/ao8="/>
         <field:display field="corps" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_corps" object="${vnormandieleocarte_}" z="ssJf1vkGSFNTn9stGS9uWJ/8YGo="/>
         <field:display field="indiceInm" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_indiceInm" object="${vnormandieleocarte_}" z="N8MFaaeoBIWeA5lx6pwvpRrRl6I="/>
         <field:display field="disciplineLibelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_disciplineLibelle" object="${vnormandieleocarte_}" z="iw+qyNW2fExFLrAOLgDTbM8YB5g="/>

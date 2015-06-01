@@ -7,12 +7,12 @@ import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
 
 privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
-    public String VNormandieLeocarte.getLeocode() {
-        return this.leocode;
+    public String VNormandieLeocarte.getLogin() {
+        return this.login;
     }
     
-    public void VNormandieLeocarte.setLeocode(String leocode) {
-        this.leocode = leocode;
+    public void VNormandieLeocarte.setLogin(String login) {
+        this.login = login;
     }
     
     public String VNormandieLeocarte.getAnneeUniversitaire() {
@@ -39,36 +39,12 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
     }
     
-    public String VNormandieLeocarte.getTypeContratLibelle() {
-        return this.typeContratLibelle;
-    }
-    
-    public void VNormandieLeocarte.setTypeContratLibelle(String typeContratLibelle) {
-        this.typeContratLibelle = typeContratLibelle;
-    }
-    
-    public String VNormandieLeocarte.getTypeContratCode() {
-        return this.typeContratCode;
-    }
-    
-    public void VNormandieLeocarte.setTypeContratCode(String typeContratCode) {
-        this.typeContratCode = typeContratCode;
-    }
-    
     public String VNormandieLeocarte.getPersID() {
         return this.persID;
     }
     
     public void VNormandieLeocarte.setPersID(String persID) {
         this.persID = persID;
-    }
-    
-    public String VNormandieLeocarte.getTelPortableNo() {
-        return this.telPortableNo;
-    }
-    
-    public void VNormandieLeocarte.setTelPortableNo(String telPortableNo) {
-        this.telPortableNo = telPortableNo;
     }
     
     public String VNormandieLeocarte.getTitreCarteLibelle() {
