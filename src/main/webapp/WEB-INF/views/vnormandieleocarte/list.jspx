@@ -21,19 +21,13 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_fr_normandieuniv_cmnws_db_VNormandieLeocarte" items="${vnormandieleocartes}" z="zdUwLC5lHvhyCb5lYB6RBvOvhKc=">
-        <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="leocode" update="false" z="IYsceHR83GfbJukGtP/LHNwCn+E=">
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_leocode" label="leocode" property="leocode" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_eppn" property="eppn" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" property="nomSurCarte" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_anneeUniversitaire" property="anneeUniversitaire" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationLibelle" property="typePopulationLibelle" render="false" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCnous" property="typePopulationCnous" render="false" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" render="false" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" render="false" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_buNo" property="buNo" render="false" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" property="login" render="false" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_etablissementCode" property="etablissementCode" render="false" z="user-managed"/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeCarteCode" property="typeCarteCode" render="false" z="user-managed"/>
+        <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="login" update="false" z="xn1Xk0yFbAqTMSmAO8nOHFLOVmI=">
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCode" property="typePopulationCode" z="ArHQNKsvbbzJCPbCAE3oUyLjdiA="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typePopulationCnous" property="typePopulationCnous" z="HoYUyGaRuDMhBVESu7O2CooAq3s="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_etablissementCode" property="etablissementCode" z="AJccNYoHYvhcBKDOXkLVq8R7RoU="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeVisuelCode" property="typeVisuelCode" z="yDyCXe5N1iHy+fzzxox3dZn2PY8="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" z="WnDj160py4lxHg00j0tRoC7lrAo="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="bZIK8gfVq8BR+6SZSHR76dQWBFs="/>
         </table:table>
     </page:list>
 </div>

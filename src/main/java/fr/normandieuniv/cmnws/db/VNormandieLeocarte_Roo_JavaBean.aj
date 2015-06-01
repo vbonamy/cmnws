@@ -7,12 +7,12 @@ import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
 
 privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
-    public String VNormandieLeocarte.getLeocode() {
-        return this.leocode;
+    public String VNormandieLeocarte.getLogin() {
+        return this.login;
     }
     
-    public void VNormandieLeocarte.setLeocode(String leocode) {
-        this.leocode = leocode;
+    public void VNormandieLeocarte.setLogin(String login) {
+        this.login = login;
     }
     
     public String VNormandieLeocarte.getAnneeUniversitaire() {
@@ -23,6 +23,7 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.anneeUniversitaire = anneeUniversitaire;
     }
     
+<<<<<<< HEAD
     public String VNormandieLeocarte.getTypeContratLibelle() {
         return this.typeContratLibelle;
     }
@@ -37,6 +38,22 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
     public void VNormandieLeocarte.setTypeContratCode(String typeContratCode) {
         this.typeContratCode = typeContratCode;
+=======
+    public Boolean VNormandieLeocarte.getAutorisationtransmissionCrous() {
+        return this.autorisationtransmissionCrous;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationtransmissionCrous(Boolean autorisationtransmissionCrous) {
+        this.autorisationtransmissionCrous = autorisationtransmissionCrous;
+    }
+    
+    public Boolean VNormandieLeocarte.getAutorisationDiffusionPhoto() {
+        return this.autorisationDiffusionPhoto;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationDiffusionPhoto(Boolean autorisationDiffusionPhoto) {
+        this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
+>>>>>>> master
     }
     
     public String VNormandieLeocarte.getPersID() {
@@ -45,14 +62,6 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
     public void VNormandieLeocarte.setPersID(String persID) {
         this.persID = persID;
-    }
-    
-    public String VNormandieLeocarte.getTelPortableNo() {
-        return this.telPortableNo;
-    }
-    
-    public void VNormandieLeocarte.setTelPortableNo(String telPortableNo) {
-        this.telPortableNo = telPortableNo;
     }
     
     public String VNormandieLeocarte.getTitreCarteLibelle() {

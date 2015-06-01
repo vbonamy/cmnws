@@ -8,13 +8,12 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 
 privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
-    @Column(name = "typePopulationLibelle", length = 40)
-    private String VNormandieLeocarte.typePopulationLibelle;
+    @Column(name = "typePopulationCode", length = 2)
+    private String VNormandieLeocarte.typePopulationCode;
     
     @Column(name = "typePopulationCNOUS", length = 40)
     private String VNormandieLeocarte.typePopulationCnous;
@@ -22,8 +21,8 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "etablissementCode", length = 107)
     private String VNormandieLeocarte.etablissementCode;
     
-    @Column(name = "typeCarteCode", length = 1)
-    private String VNormandieLeocarte.typeCarteCode;
+    @Column(name = "typeVisuelCode", length = 1)
+    private String VNormandieLeocarte.typeVisuelCode;
     
     @Column(name = "prefixeLeoCode", length = 5)
     private String VNormandieLeocarte.prefixeLeoCode;
@@ -34,12 +33,7 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "buNo", length = 8)
     private String VNormandieLeocarte.buNo;
     
-    @Column(name = "login", length = 20)
-    @NotNull
-    private String VNormandieLeocarte.login;
-    
     @Column(name = "eduPersonAffiliation", length = 100)
-    @NotNull
     private String VNormandieLeocarte.eduPersonAffiliation;
     
     @Column(name = "eppn", length = 34)
@@ -51,14 +45,7 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "nomSurCarte", length = 40)
     private String VNormandieLeocarte.nomSurCarte;
     
-    @Column(name = "nomUsuel", length = 40)
-    private String VNormandieLeocarte.nomUsuel;
-    
-    @Column(name = "nomPatronymique", length = 40)
-    @NotNull
-    private String VNormandieLeocarte.nomPatronymique;
-    
-    @Column(name = "prenom", length = 40)
+    @Column(name = "prenom", length = 255)
     private String VNormandieLeocarte.prenom;
     
     @Column(name = "dateNaissance")
@@ -77,41 +64,20 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "etablissementRNE", length = 8)
     private String VNormandieLeocarte.etablissementRne;
     
-    @Column(name = "structRattPrincCode", length = 6)
-    private String VNormandieLeocarte.structRattPrincCode;
+    @Column(name = "affectation1Code", length = 6)
+    private String VNormandieLeocarte.affectation1code;
     
-    @Column(name = "structRattPrincRne", length = 8)
-    private String VNormandieLeocarte.structRattPrincRne;
+    @Column(name = "affectationRNE", length = 8)
+    private String VNormandieLeocarte.affectationRne;
     
-    @Column(name = "structRattPrincLibel", length = 60)
-    private String VNormandieLeocarte.structRattPrincLibel;
+    @Column(name = "affectation1Libelle", length = 60)
+    private String VNormandieLeocarte.affectation1libelle;
     
-    @Column(name = "structRattSecondCode", length = 6)
-    private String VNormandieLeocarte.structRattSecondCode;
+    @Column(name = "affectation2Code", length = 6)
+    private String VNormandieLeocarte.affectation2code;
     
-    @Column(name = "structRattSecondRne", length = 8)
-    private String VNormandieLeocarte.structRattSecondRne;
-    
-    @Column(name = "structRattSecondLibel", length = 60)
-    private String VNormandieLeocarte.structRattSecondLibel;
-    
-    @Column(name = "structMereRattPrincCode", length = 6)
-    private String VNormandieLeocarte.structMereRattPrincCode;
-    
-    @Column(name = "structMereRattPrincRne", length = 8)
-    private String VNormandieLeocarte.structMereRattPrincRne;
-    
-    @Column(name = "structMereRattPrincLibel", length = 60)
-    private String VNormandieLeocarte.structMereRattPrincLibel;
-    
-    @Column(name = "structMereRattSecondCode", length = 6)
-    private String VNormandieLeocarte.structMereRattSecondCode;
-    
-    @Column(name = "structMereRattSecondRne", length = 8)
-    private String VNormandieLeocarte.structMereRattSecondRne;
-    
-    @Column(name = "structMereRattSecondLibel", length = 60)
-    private String VNormandieLeocarte.structMereRattSecondLibel;
+    @Column(name = "affectation2Libelle", length = 60)
+    private String VNormandieLeocarte.affectation2libelle;
     
     @Column(name = "corps", length = 40)
     private String VNormandieLeocarte.corps;
@@ -155,6 +121,7 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "centreSecuLibelle", length = 10)
     private String VNormandieLeocarte.centreSecuLibelle;
     
+<<<<<<< HEAD
     @Column(name = "autorisationtransmissionCrous")
     private Boolean VNormandieLeocarte.autorisationtransmissionCrous;
     
@@ -163,10 +130,14 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public String VNormandieLeocarte.getTypePopulationLibelle() {
         return typePopulationLibelle;
+=======
+    public String VNormandieLeocarte.getTypePopulationCode() {
+        return typePopulationCode;
+>>>>>>> master
     }
     
-    public void VNormandieLeocarte.setTypePopulationLibelle(String typePopulationLibelle) {
-        this.typePopulationLibelle = typePopulationLibelle;
+    public void VNormandieLeocarte.setTypePopulationCode(String typePopulationCode) {
+        this.typePopulationCode = typePopulationCode;
     }
     
     public String VNormandieLeocarte.getTypePopulationCnous() {
@@ -185,12 +156,12 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.etablissementCode = etablissementCode;
     }
     
-    public String VNormandieLeocarte.getTypeCarteCode() {
-        return typeCarteCode;
+    public String VNormandieLeocarte.getTypeVisuelCode() {
+        return typeVisuelCode;
     }
     
-    public void VNormandieLeocarte.setTypeCarteCode(String typeCarteCode) {
-        this.typeCarteCode = typeCarteCode;
+    public void VNormandieLeocarte.setTypeVisuelCode(String typeVisuelCode) {
+        this.typeVisuelCode = typeVisuelCode;
     }
     
     public String VNormandieLeocarte.getPrefixeLeoCode() {
@@ -215,14 +186,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setBuNo(String buNo) {
         this.buNo = buNo;
-    }
-    
-    public String VNormandieLeocarte.getLogin() {
-        return login;
-    }
-    
-    public void VNormandieLeocarte.setLogin(String login) {
-        this.login = login;
     }
     
     public String VNormandieLeocarte.getEduPersonAffiliation() {
@@ -255,22 +218,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setNomSurCarte(String nomSurCarte) {
         this.nomSurCarte = nomSurCarte;
-    }
-    
-    public String VNormandieLeocarte.getNomUsuel() {
-        return nomUsuel;
-    }
-    
-    public void VNormandieLeocarte.setNomUsuel(String nomUsuel) {
-        this.nomUsuel = nomUsuel;
-    }
-    
-    public String VNormandieLeocarte.getNomPatronymique() {
-        return nomPatronymique;
-    }
-    
-    public void VNormandieLeocarte.setNomPatronymique(String nomPatronymique) {
-        this.nomPatronymique = nomPatronymique;
     }
     
     public String VNormandieLeocarte.getPrenom() {
@@ -313,100 +260,44 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.etablissementRne = etablissementRne;
     }
     
-    public String VNormandieLeocarte.getStructRattPrincCode() {
-        return structRattPrincCode;
+    public String VNormandieLeocarte.getAffectation1code() {
+        return affectation1code;
     }
     
-    public void VNormandieLeocarte.setStructRattPrincCode(String structRattPrincCode) {
-        this.structRattPrincCode = structRattPrincCode;
+    public void VNormandieLeocarte.setAffectation1code(String affectation1code) {
+        this.affectation1code = affectation1code;
     }
     
-    public String VNormandieLeocarte.getStructRattPrincRne() {
-        return structRattPrincRne;
+    public String VNormandieLeocarte.getAffectationRne() {
+        return affectationRne;
     }
     
-    public void VNormandieLeocarte.setStructRattPrincRne(String structRattPrincRne) {
-        this.structRattPrincRne = structRattPrincRne;
+    public void VNormandieLeocarte.setAffectationRne(String affectationRne) {
+        this.affectationRne = affectationRne;
     }
     
-    public String VNormandieLeocarte.getStructRattPrincLibel() {
-        return structRattPrincLibel;
+    public String VNormandieLeocarte.getAffectation1libelle() {
+        return affectation1libelle;
     }
     
-    public void VNormandieLeocarte.setStructRattPrincLibel(String structRattPrincLibel) {
-        this.structRattPrincLibel = structRattPrincLibel;
+    public void VNormandieLeocarte.setAffectation1libelle(String affectation1libelle) {
+        this.affectation1libelle = affectation1libelle;
     }
     
-    public String VNormandieLeocarte.getStructRattSecondCode() {
-        return structRattSecondCode;
+    public String VNormandieLeocarte.getAffectation2code() {
+        return affectation2code;
     }
     
-    public void VNormandieLeocarte.setStructRattSecondCode(String structRattSecondCode) {
-        this.structRattSecondCode = structRattSecondCode;
+    public void VNormandieLeocarte.setAffectation2code(String affectation2code) {
+        this.affectation2code = affectation2code;
     }
     
-    public String VNormandieLeocarte.getStructRattSecondRne() {
-        return structRattSecondRne;
+    public String VNormandieLeocarte.getAffectation2libelle() {
+        return affectation2libelle;
     }
     
-    public void VNormandieLeocarte.setStructRattSecondRne(String structRattSecondRne) {
-        this.structRattSecondRne = structRattSecondRne;
-    }
-    
-    public String VNormandieLeocarte.getStructRattSecondLibel() {
-        return structRattSecondLibel;
-    }
-    
-    public void VNormandieLeocarte.setStructRattSecondLibel(String structRattSecondLibel) {
-        this.structRattSecondLibel = structRattSecondLibel;
-    }
-    
-    public String VNormandieLeocarte.getStructMereRattPrincCode() {
-        return structMereRattPrincCode;
-    }
-    
-    public void VNormandieLeocarte.setStructMereRattPrincCode(String structMereRattPrincCode) {
-        this.structMereRattPrincCode = structMereRattPrincCode;
-    }
-    
-    public String VNormandieLeocarte.getStructMereRattPrincRne() {
-        return structMereRattPrincRne;
-    }
-    
-    public void VNormandieLeocarte.setStructMereRattPrincRne(String structMereRattPrincRne) {
-        this.structMereRattPrincRne = structMereRattPrincRne;
-    }
-    
-    public String VNormandieLeocarte.getStructMereRattPrincLibel() {
-        return structMereRattPrincLibel;
-    }
-    
-    public void VNormandieLeocarte.setStructMereRattPrincLibel(String structMereRattPrincLibel) {
-        this.structMereRattPrincLibel = structMereRattPrincLibel;
-    }
-    
-    public String VNormandieLeocarte.getStructMereRattSecondCode() {
-        return structMereRattSecondCode;
-    }
-    
-    public void VNormandieLeocarte.setStructMereRattSecondCode(String structMereRattSecondCode) {
-        this.structMereRattSecondCode = structMereRattSecondCode;
-    }
-    
-    public String VNormandieLeocarte.getStructMereRattSecondRne() {
-        return structMereRattSecondRne;
-    }
-    
-    public void VNormandieLeocarte.setStructMereRattSecondRne(String structMereRattSecondRne) {
-        this.structMereRattSecondRne = structMereRattSecondRne;
-    }
-    
-    public String VNormandieLeocarte.getStructMereRattSecondLibel() {
-        return structMereRattSecondLibel;
-    }
-    
-    public void VNormandieLeocarte.setStructMereRattSecondLibel(String structMereRattSecondLibel) {
-        this.structMereRattSecondLibel = structMereRattSecondLibel;
+    public void VNormandieLeocarte.setAffectation2libelle(String affectation2libelle) {
+        this.affectation2libelle = affectation2libelle;
     }
     
     public String VNormandieLeocarte.getCorps() {

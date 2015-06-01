@@ -32,12 +32,6 @@ public class VNormandieLeocarte {
     @NotNull
     private String anneeUniversitaire;
 
-    @Column(columnDefinition = "text")
-    private String typeContratLibelle;
-
-    @Column(columnDefinition = "text")
-    private String typeContratCode;
-
     @Column(name = "persID", columnDefinition = "text")
     private String persID;
 
