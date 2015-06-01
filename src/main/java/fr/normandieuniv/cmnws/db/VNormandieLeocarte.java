@@ -1,5 +1,4 @@
 package fr.normandieuniv.cmnws.db;
-
 import javax.persistence.Column;
 import javax.persistence.EntityManager;
 import javax.persistence.Id;
@@ -26,7 +25,7 @@ public class VNormandieLeocarte {
 
     @Id
     @Column
-    private String leocode;
+    private String login;
 
     @Column(columnDefinition = "char")
     @NotNull
@@ -34,10 +33,7 @@ public class VNormandieLeocarte {
 
     @Column(name = "persID", columnDefinition = "text")
     private String persID;
-
-    @Column(columnDefinition = "text")
-    private String telPortableNo;
-
+    
     @Column(columnDefinition = "text")
     private String titreCarteLibelle;
 
@@ -52,40 +48,42 @@ public class VNormandieLeocarte {
 
     @Column(columnDefinition = "text")
     private String cotisationParticuliere;
+    
+    @Column(name = "CODEBASEMETIER", length = 8)
+    private String codeBaseMetier;
 
-    public static TypedQuery<fr.normandieuniv.cmnws.db.VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike(String anneeUniversitaire, String codeBaseMetier, String nomSurCarte) {
+    public static TypedQuery<fr.normandieuniv.cmnws.db.VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike(String anneeUniversitaire, String codeBaseMetier, String nomsurcarte) {
         if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");
         if (codeBaseMetier == null || codeBaseMetier.length() == 0) throw new IllegalArgumentException("The codeBaseMetier argument is required");
         if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");
-        if (nomSurCarte == null || nomSurCarte.length() == 0) throw new IllegalArgumentException("The nomSurCarte argument is required");
+        if (nomsurcarte == null || nomsurcarte.length() == 0) throw new IllegalArgumentException("The nomsurcarte argument is required");
         EntityManager em = VNormandieLeocarte.entityManager();
-        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND o.codeBaseMetier = :codeBaseMetier  OR o.anneeUniversitaire = :anneeUniversitaire  AND LOWER(o.nomSurCarte) LIKE LOWER(:nomSurCarte)", VNormandieLeocarte.class);
+        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND o.codeBaseMetier = :codeBaseMetier  OR o.anneeUniversitaire = :anneeUniversitaire  AND LOWER(o.nomsurcarte) LIKE LOWER(:nomsurcarte)", VNormandieLeocarte.class);
         q.setParameter("anneeUniversitaire", anneeUniversitaire);
         q.setParameter("codeBaseMetier", codeBaseMetier);
         q.setParameter("anneeUniversitaire", anneeUniversitaire);
-        q.setParameter("nomSurCarte", nomSurCarte);
+        q.setParameter("nomsurcarte", nomsurcarte);
         return q;
     }
-    
-    public static TypedQuery<VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(String anneeUniversitaire, String codeBaseMetier, String nomSurCarte) {
+
+    public static TypedQuery<VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(String anneeUniversitaire, String codeBaseMetier, String nomsurcarte) {
         if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");
         if (codeBaseMetier == null || codeBaseMetier.length() == 0) throw new IllegalArgumentException("The codeBaseMetier argument is required");
         EntityManager em = VNormandieLeocarte.entityManager();
-        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND o.codeBaseMetier = :codeBaseMetier  AND LOWER(o.nomSurCarte) LIKE LOWER(:nomSurCarte)",VNormandieLeocarte.class);
+        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND o.codeBaseMetier = :codeBaseMetier  AND LOWER(o.nomsurcarte) LIKE LOWER(:nomsurcarte)", VNormandieLeocarte.class);
         q.setParameter("anneeUniversitaire", anneeUniversitaire);
         q.setParameter("codeBaseMetier", codeBaseMetier);
-        q.setParameter("nomSurCarte", nomSurCarte);
+        q.setParameter("nomsurcarte", nomsurcarte);
         return q;
     }
-    
-    public static TypedQuery<VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike(String anneeUniversitaire, String nomSurCarte) {
+
+    public static TypedQuery<VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike(String anneeUniversitaire, String nomsurcarte) {
         if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");
-        if (nomSurCarte == null || nomSurCarte.length() == 0) throw new IllegalArgumentException("The nomSurCarte argument is required");
+        if (nomsurcarte == null || nomsurcarte.length() == 0) throw new IllegalArgumentException("The nomsurcarte argument is required");
         EntityManager em = VNormandieLeocarte.entityManager();
-        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND LOWER(o.nomSurCarte) LIKE LOWER(:nomSurCarte)",VNormandieLeocarte.class);
+        TypedQuery<VNormandieLeocarte> q = em.createQuery("SELECT o FROM VNormandieLeocarte AS o WHERE o.anneeUniversitaire = :anneeUniversitaire  AND LOWER(o.nomsurcarte) LIKE LOWER(:nomsurcarte)", VNormandieLeocarte.class);
         q.setParameter("anneeUniversitaire", anneeUniversitaire);
-        q.setParameter("nomSurCarte", nomSurCarte);
+        q.setParameter("nomsurcarte", nomsurcarte);
         return q;
     }
-    
 }

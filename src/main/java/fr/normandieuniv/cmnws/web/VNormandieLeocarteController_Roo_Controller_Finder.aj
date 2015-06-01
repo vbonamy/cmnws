@@ -52,44 +52,4 @@ privileged aspect VNormandieLeocarteController_Roo_Controller_Finder {
         return "vnormandieleocarte/list";
     }
     
-    @RequestMapping(params = { "find=ByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike", "form" }, method = RequestMethod.GET)
-    public String VNormandieLeocarteController.findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLikeForm(Model uiModel) {
-        return "vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike";
-    }
-    
-    @RequestMapping(params = "find=ByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike", method = RequestMethod.GET)
-    public String VNormandieLeocarteController.findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(@RequestParam("anneeUniversitaire") String anneeUniversitaire, @RequestParam("codeBaseMetier") String codeBaseMetier, @RequestParam("nomSurCarte") String nomSurCarte, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, @RequestParam(value = "sortFieldName", required = false) String sortFieldName, @RequestParam(value = "sortOrder", required = false) String sortOrder, Model uiModel) {
-        if (page != null || size != null) {
-            int sizeNo = size == null ? 10 : size.intValue();
-            final int firstResult = page == null ? 0 : (page.intValue() - 1) * sizeNo;
-            uiModel.addAttribute("vnormandieleocartes", VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(anneeUniversitaire, codeBaseMetier, nomSurCarte, sortFieldName, sortOrder).setFirstResult(firstResult).setMaxResults(sizeNo).getResultList());
-            float nrOfPages = (float) VNormandieLeocarte.countFindVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(anneeUniversitaire, codeBaseMetier, nomSurCarte) / sizeNo;
-            uiModel.addAttribute("maxPages", (int) ((nrOfPages > (int) nrOfPages || nrOfPages == 0.0) ? nrOfPages + 1 : nrOfPages));
-        } else {
-            uiModel.addAttribute("vnormandieleocartes", VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike(anneeUniversitaire, codeBaseMetier, nomSurCarte, sortFieldName, sortOrder).getResultList());
-        }
-        addDateTimeFormatPatterns(uiModel);
-        return "vnormandieleocarte/list";
-    }
-    
-    @RequestMapping(params = { "find=ByAnneeUniversitaireEqualsAndNomSurCarteLike", "form" }, method = RequestMethod.GET)
-    public String VNormandieLeocarteController.findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLikeForm(Model uiModel) {
-        return "vnormandieleocarte/findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike";
-    }
-    
-    @RequestMapping(params = "find=ByAnneeUniversitaireEqualsAndNomSurCarteLike", method = RequestMethod.GET)
-    public String VNormandieLeocarteController.findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike(@RequestParam("anneeUniversitaire") String anneeUniversitaire, @RequestParam("nomSurCarte") String nomSurCarte, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, @RequestParam(value = "sortFieldName", required = false) String sortFieldName, @RequestParam(value = "sortOrder", required = false) String sortOrder, Model uiModel) {
-        if (page != null || size != null) {
-            int sizeNo = size == null ? 10 : size.intValue();
-            final int firstResult = page == null ? 0 : (page.intValue() - 1) * sizeNo;
-            uiModel.addAttribute("vnormandieleocartes", VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike(anneeUniversitaire, nomSurCarte, sortFieldName, sortOrder).setFirstResult(firstResult).setMaxResults(sizeNo).getResultList());
-            float nrOfPages = (float) VNormandieLeocarte.countFindVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike(anneeUniversitaire, nomSurCarte) / sizeNo;
-            uiModel.addAttribute("maxPages", (int) ((nrOfPages > (int) nrOfPages || nrOfPages == 0.0) ? nrOfPages + 1 : nrOfPages));
-        } else {
-            uiModel.addAttribute("vnormandieleocartes", VNormandieLeocarte.findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike(anneeUniversitaire, nomSurCarte, sortFieldName, sortOrder).getResultList());
-        }
-        addDateTimeFormatPatterns(uiModel);
-        return "vnormandieleocarte/list";
-    }
-    
 }

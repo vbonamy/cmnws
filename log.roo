@@ -33,3 +33,11 @@ database reverse engineer --schema unable-to-obtain-connection --enableViews tru
 // [failed] database reverse engineer --schema unable-to-obtain-connection --enableViews true --includeTables V_NORMANDIE_LEOCARTE --package fr.normandieuniv.cmnws.db
 database reverse engineer --schema unable-to-obtain-connection --enableViews true --includeTables V_NORMANDIE_LEOCARTE --package fr.normandieuniv.cmnws.db
 // Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2014-12-11 16:23:15
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-06-01 16:16:58
+database reverse engineer --schema unable-to-obtain-connection  --enableViews true --includeTables V_NORMANDIE_LEOCARTE --package fr.normandieuniv.cmnws.db
+database reverse engineer --schema HARP_ADM  --enableViews true --includeTables V_NORMANDIE_LEOCARTE --package fr.normandieuniv.cmnws.db
+exit
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-06-01 16:20:21
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-06-01 16:21:19
+focus --class fr.normandieuniv.cmnws.db.VNormandieLeocarte
+finder list 

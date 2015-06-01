@@ -23,39 +23,6 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.anneeUniversitaire = anneeUniversitaire;
     }
     
-<<<<<<< HEAD
-    public String VNormandieLeocarte.getTypeContratLibelle() {
-        return this.typeContratLibelle;
-    }
-    
-    public void VNormandieLeocarte.setTypeContratLibelle(String typeContratLibelle) {
-        this.typeContratLibelle = typeContratLibelle;
-    }
-    
-    public String VNormandieLeocarte.getTypeContratCode() {
-        return this.typeContratCode;
-    }
-    
-    public void VNormandieLeocarte.setTypeContratCode(String typeContratCode) {
-        this.typeContratCode = typeContratCode;
-=======
-    public Boolean VNormandieLeocarte.getAutorisationtransmissionCrous() {
-        return this.autorisationtransmissionCrous;
-    }
-    
-    public void VNormandieLeocarte.setAutorisationtransmissionCrous(Boolean autorisationtransmissionCrous) {
-        this.autorisationtransmissionCrous = autorisationtransmissionCrous;
-    }
-    
-    public Boolean VNormandieLeocarte.getAutorisationDiffusionPhoto() {
-        return this.autorisationDiffusionPhoto;
-    }
-    
-    public void VNormandieLeocarte.setAutorisationDiffusionPhoto(Boolean autorisationDiffusionPhoto) {
-        this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
->>>>>>> master
-    }
-    
     public String VNormandieLeocarte.getPersID() {
         return this.persID;
     }
@@ -102,6 +69,14 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
     public void VNormandieLeocarte.setCotisationParticuliere(String cotisationParticuliere) {
         this.cotisationParticuliere = cotisationParticuliere;
+    }
+    
+    public String VNormandieLeocarte.getCodeBaseMetier() {
+        return this.codeBaseMetier;
+    }
+    
+    public void VNormandieLeocarte.setCodeBaseMetier(String codeBaseMetier) {
+        this.codeBaseMetier = codeBaseMetier;
     }
     
 }

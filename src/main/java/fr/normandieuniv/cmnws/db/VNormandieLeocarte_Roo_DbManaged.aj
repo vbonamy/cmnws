@@ -4,196 +4,218 @@
 package fr.normandieuniv.cmnws.db;
 
 import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
-import java.util.Date;
+import java.math.BigDecimal;
+import java.util.Calendar;
 import javax.persistence.Column;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotNull;
 import org.springframework.format.annotation.DateTimeFormat;
 
 privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
-    @Column(name = "typePopulationCode", length = 2)
-    private String VNormandieLeocarte.typePopulationCode;
+    @Column(name = "TYPEPOPULATIONCODE", length = 2)
+    private String VNormandieLeocarte.typepopulationcode;
     
-    @Column(name = "typePopulationCNOUS", length = 40)
-    private String VNormandieLeocarte.typePopulationCnous;
+    @Column(name = "TYPEPOPULATIONCNOUS", length = 40)
+    private String VNormandieLeocarte.typepopulationcnous;
     
-    @Column(name = "etablissementCode", length = 107)
-    private String VNormandieLeocarte.etablissementCode;
+    @Column(name = "ETABLISSEMENTCODE", length = 107)
+    private String VNormandieLeocarte.etablissementcode;
     
-    @Column(name = "typeVisuelCode", length = 1)
-    private String VNormandieLeocarte.typeVisuelCode;
+    @Column(name = "TYPEVISUELCODE", length = 1)
+    private String VNormandieLeocarte.typevisuelcode;
     
-    @Column(name = "prefixeLeoCode", length = 5)
-    private String VNormandieLeocarte.prefixeLeoCode;
+    @Column(name = "TITRECARTELIBELLE", length = 60)
+    private String VNormandieLeocarte.titrecartelibelle;
     
-    @Column(name = "codeBaseMetier", length = 8)
-    private String VNormandieLeocarte.codeBaseMetier;
+    @Column(name = "PREFIXELEOCODE", length = 5)
+    private String VNormandieLeocarte.prefixeleocode;
     
-    @Column(name = "buNo", length = 8)
-    private String VNormandieLeocarte.buNo;
+    @Column(name = "PERSID", length = 30)
+    private String VNormandieLeocarte.persid;
     
-    @Column(name = "eduPersonAffiliation", length = 100)
-    private String VNormandieLeocarte.eduPersonAffiliation;
+    @Column(name = "BUNO", length = 8)
+    private String VNormandieLeocarte.buno;
     
-    @Column(name = "eppn", length = 34)
+    @Column(name = "EDUPERSONAFFILIATION", length = 100)
+    private String VNormandieLeocarte.edupersonaffiliation;
+    
+    @Column(name = "EPPN", length = 34)
+    @NotNull
     private String VNormandieLeocarte.eppn;
     
-    @Column(name = "ine", length = 11)
+    @Column(name = "INE", length = 11)
     private String VNormandieLeocarte.ine;
     
-    @Column(name = "nomSurCarte", length = 40)
-    private String VNormandieLeocarte.nomSurCarte;
+    @Column(name = "NOMSURCARTE", length = 40)
+    private String VNormandieLeocarte.nomsurcarte;
     
-    @Column(name = "prenom", length = 255)
+    @Column(name = "PRENOM", length = 255)
     private String VNormandieLeocarte.prenom;
     
-    @Column(name = "dateNaissance")
-    @Temporal(TemporalType.DATE)
-    @DateTimeFormat(style = "M-")
-    private Date VNormandieLeocarte.dateNaissance;
+    @Column(name = "DATENAISSANCE")
+    @Temporal(TemporalType.TIMESTAMP)
+    @DateTimeFormat(style = "MM")
+    private Calendar VNormandieLeocarte.datenaissance;
     
-    @Column(name = "email", length = 120)
+    @Column(name = "EMAIL", length = 120)
     private String VNormandieLeocarte.email;
     
-    @Column(name = "dateFinDroits")
-    @Temporal(TemporalType.DATE)
-    @DateTimeFormat(style = "M-")
-    private Date VNormandieLeocarte.dateFinDroits;
+    @Column(name = "DATEFINDROITS")
+    @Temporal(TemporalType.TIMESTAMP)
+    @DateTimeFormat(style = "MM")
+    private Calendar VNormandieLeocarte.datefindroits;
     
-    @Column(name = "etablissementRNE", length = 8)
-    private String VNormandieLeocarte.etablissementRne;
+    @Column(name = "ANNEEUNIVERSITAIRE", length = 4)
+    @NotNull
+    private String VNormandieLeocarte.anneeuniversitaire;
     
-    @Column(name = "affectation1Code", length = 6)
+    @Column(name = "ETABLISSEMENTLIBELLE", length = 60)
+    private String VNormandieLeocarte.etablissementlibelle;
+    
+    @Column(name = "ETABLISSEMENTRNE", length = 8)
+    private String VNormandieLeocarte.etablissementrne;
+    
+    @Column(name = "AFFECTATION1CODE", length = 6)
     private String VNormandieLeocarte.affectation1code;
     
-    @Column(name = "affectationRNE", length = 8)
-    private String VNormandieLeocarte.affectationRne;
+    @Column(name = "AFFECTATIONRNE", length = 8)
+    private String VNormandieLeocarte.affectationrne;
     
-    @Column(name = "affectation1Libelle", length = 60)
+    @Column(name = "AFFECTATION1LIBELLE", length = 60)
     private String VNormandieLeocarte.affectation1libelle;
     
-    @Column(name = "affectation2Code", length = 6)
+    @Column(name = "AFFECTATION2CODE", length = 6)
     private String VNormandieLeocarte.affectation2code;
     
-    @Column(name = "affectation2Libelle", length = 60)
+    @Column(name = "AFFECTATION2LIBELLE", length = 60)
     private String VNormandieLeocarte.affectation2libelle;
     
-    @Column(name = "corps", length = 40)
+    @Column(name = "CORPS", length = 40)
     private String VNormandieLeocarte.corps;
     
-    @Column(name = "indiceInm", length = 6)
-    private String VNormandieLeocarte.indiceInm;
+    @Column(name = "RESPONSABILITESTRUCT", length = 60)
+    private String VNormandieLeocarte.responsabilitestruct;
     
-    @Column(name = "disciplineLibelle", length = 150)
-    private String VNormandieLeocarte.disciplineLibelle;
+    @Column(name = "INDICEINM", length = 6)
+    private String VNormandieLeocarte.indiceinm;
     
-    @Column(name = "disciplineCode", length = 150)
-    private String VNormandieLeocarte.disciplineCode;
+    @Column(name = "DISCIPLINELIBELLE", length = 150)
+    private String VNormandieLeocarte.disciplinelibelle;
     
-    @Column(name = "versionVetCode", length = 40)
-    private String VNormandieLeocarte.versionVetCode;
+    @Column(name = "DISCIPLINECODE", length = 150)
+    private String VNormandieLeocarte.disciplinecode;
     
-    @Column(name = "etapeLibelle", length = 25)
-    private String VNormandieLeocarte.etapeLibelle;
+    @Column(name = "VERSIONVETCODE", length = 40)
+    private String VNormandieLeocarte.versionvetcode;
     
-    @Column(name = "etapeCode", length = 6)
-    private String VNormandieLeocarte.etapeCode;
+    @Column(name = "ETAPELIBELLE", length = 25)
+    private String VNormandieLeocarte.etapelibelle;
     
-    @Column(name = "etapeSecondeCode", length = 6)
-    private String VNormandieLeocarte.etapeSecondeCode;
+    @Column(name = "ETAPECODE", length = 6)
+    private String VNormandieLeocarte.etapecode;
     
-    @Column(name = "versionVETSecondeCode", length = 40)
-    private String VNormandieLeocarte.versionVetsecondeCode;
+    @Column(name = "ETAPESECONDECODE", length = 6)
+    private String VNormandieLeocarte.etapesecondecode;
     
-    @Column(name = "etapeSecondeLibelle", length = 25)
-    private String VNormandieLeocarte.etapeSecondeLibelle;
+    @Column(name = "VERSIONVETSECONDECODE", length = 40)
+    private String VNormandieLeocarte.versionvetsecondecode;
     
-    @Column(name = "cgeCode", length = 3)
-    private String VNormandieLeocarte.cgeCode;
+    @Column(name = "ETAPESECONDELIBELLE", length = 25)
+    private String VNormandieLeocarte.etapesecondelibelle;
     
-    @Column(name = "cgeLibelle", length = 40)
-    private String VNormandieLeocarte.cgeLibelle;
+    @Column(name = "CGECODE", length = 3)
+    private String VNormandieLeocarte.cgecode;
     
-    @Column(name = "centreSecuCode", length = 3)
-    private String VNormandieLeocarte.centreSecuCode;
+    @Column(name = "CGELIBELLE", length = 40)
+    private String VNormandieLeocarte.cgelibelle;
     
-    @Column(name = "centreSecuLibelle", length = 10)
-    private String VNormandieLeocarte.centreSecuLibelle;
+    @Column(name = "CENTRESECUCODE", length = 3)
+    private String VNormandieLeocarte.centresecucode;
     
-<<<<<<< HEAD
-    @Column(name = "autorisationtransmissionCrous")
-    private Boolean VNormandieLeocarte.autorisationtransmissionCrous;
+    @Column(name = "CENTRESECULIBELLE", length = 10)
+    private String VNormandieLeocarte.centreseculibelle;
     
-    @Column(name = "autorisationDiffusionPhoto")
-    private Boolean VNormandieLeocarte.autorisationDiffusionPhoto;
+    @Column(name = "COTISATIONPARTICULIERE", length = 60)
+    private String VNormandieLeocarte.cotisationparticuliere;
     
-    public String VNormandieLeocarte.getTypePopulationLibelle() {
-        return typePopulationLibelle;
-=======
-    public String VNormandieLeocarte.getTypePopulationCode() {
-        return typePopulationCode;
->>>>>>> master
+    @Column(name = "AUTORISATIONTRANSMISSIONCROUS", precision = 1)
+    private BigDecimal VNormandieLeocarte.autorisationtransmissioncrous;
+    
+    @Column(name = "AUTORISATIONDIFFUSIONPHOTO", precision = 1)
+    private BigDecimal VNormandieLeocarte.autorisationdiffusionphoto;
+    
+    public String VNormandieLeocarte.getTypepopulationcode() {
+        return typepopulationcode;
     }
     
-    public void VNormandieLeocarte.setTypePopulationCode(String typePopulationCode) {
-        this.typePopulationCode = typePopulationCode;
+    public void VNormandieLeocarte.setTypepopulationcode(String typepopulationcode) {
+        this.typepopulationcode = typepopulationcode;
     }
     
-    public String VNormandieLeocarte.getTypePopulationCnous() {
-        return typePopulationCnous;
+    public String VNormandieLeocarte.getTypepopulationcnous() {
+        return typepopulationcnous;
     }
     
-    public void VNormandieLeocarte.setTypePopulationCnous(String typePopulationCnous) {
-        this.typePopulationCnous = typePopulationCnous;
+    public void VNormandieLeocarte.setTypepopulationcnous(String typepopulationcnous) {
+        this.typepopulationcnous = typepopulationcnous;
     }
     
-    public String VNormandieLeocarte.getEtablissementCode() {
-        return etablissementCode;
+    public String VNormandieLeocarte.getEtablissementcode() {
+        return etablissementcode;
     }
     
-    public void VNormandieLeocarte.setEtablissementCode(String etablissementCode) {
-        this.etablissementCode = etablissementCode;
+    public void VNormandieLeocarte.setEtablissementcode(String etablissementcode) {
+        this.etablissementcode = etablissementcode;
     }
     
-    public String VNormandieLeocarte.getTypeVisuelCode() {
-        return typeVisuelCode;
+    public String VNormandieLeocarte.getTypevisuelcode() {
+        return typevisuelcode;
     }
     
-    public void VNormandieLeocarte.setTypeVisuelCode(String typeVisuelCode) {
-        this.typeVisuelCode = typeVisuelCode;
+    public void VNormandieLeocarte.setTypevisuelcode(String typevisuelcode) {
+        this.typevisuelcode = typevisuelcode;
     }
     
-    public String VNormandieLeocarte.getPrefixeLeoCode() {
-        return prefixeLeoCode;
+    public String VNormandieLeocarte.getTitrecartelibelle() {
+        return titrecartelibelle;
     }
     
-    public void VNormandieLeocarte.setPrefixeLeoCode(String prefixeLeoCode) {
-        this.prefixeLeoCode = prefixeLeoCode;
+    public void VNormandieLeocarte.setTitrecartelibelle(String titrecartelibelle) {
+        this.titrecartelibelle = titrecartelibelle;
     }
     
-    public String VNormandieLeocarte.getCodeBaseMetier() {
-        return codeBaseMetier;
+    public String VNormandieLeocarte.getPrefixeleocode() {
+        return prefixeleocode;
     }
     
-    public void VNormandieLeocarte.setCodeBaseMetier(String codeBaseMetier) {
-        this.codeBaseMetier = codeBaseMetier;
+    public void VNormandieLeocarte.setPrefixeleocode(String prefixeleocode) {
+        this.prefixeleocode = prefixeleocode;
     }
     
-    public String VNormandieLeocarte.getBuNo() {
-        return buNo;
+    public String VNormandieLeocarte.getPersid() {
+        return persid;
     }
     
-    public void VNormandieLeocarte.setBuNo(String buNo) {
-        this.buNo = buNo;
+    public void VNormandieLeocarte.setPersid(String persid) {
+        this.persid = persid;
     }
     
-    public String VNormandieLeocarte.getEduPersonAffiliation() {
-        return eduPersonAffiliation;
+    public String VNormandieLeocarte.getBuno() {
+        return buno;
     }
     
-    public void VNormandieLeocarte.setEduPersonAffiliation(String eduPersonAffiliation) {
-        this.eduPersonAffiliation = eduPersonAffiliation;
+    public void VNormandieLeocarte.setBuno(String buno) {
+        this.buno = buno;
+    }
+    
+    public String VNormandieLeocarte.getEdupersonaffiliation() {
+        return edupersonaffiliation;
+    }
+    
+    public void VNormandieLeocarte.setEdupersonaffiliation(String edupersonaffiliation) {
+        this.edupersonaffiliation = edupersonaffiliation;
     }
     
     public String VNormandieLeocarte.getEppn() {
@@ -212,12 +234,12 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.ine = ine;
     }
     
-    public String VNormandieLeocarte.getNomSurCarte() {
-        return nomSurCarte;
+    public String VNormandieLeocarte.getNomsurcarte() {
+        return nomsurcarte;
     }
     
-    public void VNormandieLeocarte.setNomSurCarte(String nomSurCarte) {
-        this.nomSurCarte = nomSurCarte;
+    public void VNormandieLeocarte.setNomsurcarte(String nomsurcarte) {
+        this.nomsurcarte = nomsurcarte;
     }
     
     public String VNormandieLeocarte.getPrenom() {
@@ -228,12 +250,12 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.prenom = prenom;
     }
     
-    public Date VNormandieLeocarte.getDateNaissance() {
-        return dateNaissance;
+    public Calendar VNormandieLeocarte.getDatenaissance() {
+        return datenaissance;
     }
     
-    public void VNormandieLeocarte.setDateNaissance(Date dateNaissance) {
-        this.dateNaissance = dateNaissance;
+    public void VNormandieLeocarte.setDatenaissance(Calendar datenaissance) {
+        this.datenaissance = datenaissance;
     }
     
     public String VNormandieLeocarte.getEmail() {
@@ -244,20 +266,36 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.email = email;
     }
     
-    public Date VNormandieLeocarte.getDateFinDroits() {
-        return dateFinDroits;
+    public Calendar VNormandieLeocarte.getDatefindroits() {
+        return datefindroits;
     }
     
-    public void VNormandieLeocarte.setDateFinDroits(Date dateFinDroits) {
-        this.dateFinDroits = dateFinDroits;
+    public void VNormandieLeocarte.setDatefindroits(Calendar datefindroits) {
+        this.datefindroits = datefindroits;
     }
     
-    public String VNormandieLeocarte.getEtablissementRne() {
-        return etablissementRne;
+    public String VNormandieLeocarte.getAnneeuniversitaire() {
+        return anneeuniversitaire;
     }
     
-    public void VNormandieLeocarte.setEtablissementRne(String etablissementRne) {
-        this.etablissementRne = etablissementRne;
+    public void VNormandieLeocarte.setAnneeuniversitaire(String anneeuniversitaire) {
+        this.anneeuniversitaire = anneeuniversitaire;
+    }
+    
+    public String VNormandieLeocarte.getEtablissementlibelle() {
+        return etablissementlibelle;
+    }
+    
+    public void VNormandieLeocarte.setEtablissementlibelle(String etablissementlibelle) {
+        this.etablissementlibelle = etablissementlibelle;
+    }
+    
+    public String VNormandieLeocarte.getEtablissementrne() {
+        return etablissementrne;
+    }
+    
+    public void VNormandieLeocarte.setEtablissementrne(String etablissementrne) {
+        this.etablissementrne = etablissementrne;
     }
     
     public String VNormandieLeocarte.getAffectation1code() {
@@ -268,12 +306,12 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.affectation1code = affectation1code;
     }
     
-    public String VNormandieLeocarte.getAffectationRne() {
-        return affectationRne;
+    public String VNormandieLeocarte.getAffectationrne() {
+        return affectationrne;
     }
     
-    public void VNormandieLeocarte.setAffectationRne(String affectationRne) {
-        this.affectationRne = affectationRne;
+    public void VNormandieLeocarte.setAffectationrne(String affectationrne) {
+        this.affectationrne = affectationrne;
     }
     
     public String VNormandieLeocarte.getAffectation1libelle() {
@@ -308,124 +346,140 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.corps = corps;
     }
     
-    public String VNormandieLeocarte.getIndiceInm() {
-        return indiceInm;
+    public String VNormandieLeocarte.getResponsabilitestruct() {
+        return responsabilitestruct;
     }
     
-    public void VNormandieLeocarte.setIndiceInm(String indiceInm) {
-        this.indiceInm = indiceInm;
+    public void VNormandieLeocarte.setResponsabilitestruct(String responsabilitestruct) {
+        this.responsabilitestruct = responsabilitestruct;
     }
     
-    public String VNormandieLeocarte.getDisciplineLibelle() {
-        return disciplineLibelle;
+    public String VNormandieLeocarte.getIndiceinm() {
+        return indiceinm;
     }
     
-    public void VNormandieLeocarte.setDisciplineLibelle(String disciplineLibelle) {
-        this.disciplineLibelle = disciplineLibelle;
+    public void VNormandieLeocarte.setIndiceinm(String indiceinm) {
+        this.indiceinm = indiceinm;
     }
     
-    public String VNormandieLeocarte.getDisciplineCode() {
-        return disciplineCode;
+    public String VNormandieLeocarte.getDisciplinelibelle() {
+        return disciplinelibelle;
     }
     
-    public void VNormandieLeocarte.setDisciplineCode(String disciplineCode) {
-        this.disciplineCode = disciplineCode;
+    public void VNormandieLeocarte.setDisciplinelibelle(String disciplinelibelle) {
+        this.disciplinelibelle = disciplinelibelle;
     }
     
-    public String VNormandieLeocarte.getVersionVetCode() {
-        return versionVetCode;
+    public String VNormandieLeocarte.getDisciplinecode() {
+        return disciplinecode;
     }
     
-    public void VNormandieLeocarte.setVersionVetCode(String versionVetCode) {
-        this.versionVetCode = versionVetCode;
+    public void VNormandieLeocarte.setDisciplinecode(String disciplinecode) {
+        this.disciplinecode = disciplinecode;
     }
     
-    public String VNormandieLeocarte.getEtapeLibelle() {
-        return etapeLibelle;
+    public String VNormandieLeocarte.getVersionvetcode() {
+        return versionvetcode;
     }
     
-    public void VNormandieLeocarte.setEtapeLibelle(String etapeLibelle) {
-        this.etapeLibelle = etapeLibelle;
+    public void VNormandieLeocarte.setVersionvetcode(String versionvetcode) {
+        this.versionvetcode = versionvetcode;
     }
     
-    public String VNormandieLeocarte.getEtapeCode() {
-        return etapeCode;
+    public String VNormandieLeocarte.getEtapelibelle() {
+        return etapelibelle;
     }
     
-    public void VNormandieLeocarte.setEtapeCode(String etapeCode) {
-        this.etapeCode = etapeCode;
+    public void VNormandieLeocarte.setEtapelibelle(String etapelibelle) {
+        this.etapelibelle = etapelibelle;
     }
     
-    public String VNormandieLeocarte.getEtapeSecondeCode() {
-        return etapeSecondeCode;
+    public String VNormandieLeocarte.getEtapecode() {
+        return etapecode;
     }
     
-    public void VNormandieLeocarte.setEtapeSecondeCode(String etapeSecondeCode) {
-        this.etapeSecondeCode = etapeSecondeCode;
+    public void VNormandieLeocarte.setEtapecode(String etapecode) {
+        this.etapecode = etapecode;
     }
     
-    public String VNormandieLeocarte.getVersionVetsecondeCode() {
-        return versionVetsecondeCode;
+    public String VNormandieLeocarte.getEtapesecondecode() {
+        return etapesecondecode;
     }
     
-    public void VNormandieLeocarte.setVersionVetsecondeCode(String versionVetsecondeCode) {
-        this.versionVetsecondeCode = versionVetsecondeCode;
+    public void VNormandieLeocarte.setEtapesecondecode(String etapesecondecode) {
+        this.etapesecondecode = etapesecondecode;
     }
     
-    public String VNormandieLeocarte.getEtapeSecondeLibelle() {
-        return etapeSecondeLibelle;
+    public String VNormandieLeocarte.getVersionvetsecondecode() {
+        return versionvetsecondecode;
     }
     
-    public void VNormandieLeocarte.setEtapeSecondeLibelle(String etapeSecondeLibelle) {
-        this.etapeSecondeLibelle = etapeSecondeLibelle;
+    public void VNormandieLeocarte.setVersionvetsecondecode(String versionvetsecondecode) {
+        this.versionvetsecondecode = versionvetsecondecode;
     }
     
-    public String VNormandieLeocarte.getCgeCode() {
-        return cgeCode;
+    public String VNormandieLeocarte.getEtapesecondelibelle() {
+        return etapesecondelibelle;
     }
     
-    public void VNormandieLeocarte.setCgeCode(String cgeCode) {
-        this.cgeCode = cgeCode;
+    public void VNormandieLeocarte.setEtapesecondelibelle(String etapesecondelibelle) {
+        this.etapesecondelibelle = etapesecondelibelle;
     }
     
-    public String VNormandieLeocarte.getCgeLibelle() {
-        return cgeLibelle;
+    public String VNormandieLeocarte.getCgecode() {
+        return cgecode;
     }
     
-    public void VNormandieLeocarte.setCgeLibelle(String cgeLibelle) {
-        this.cgeLibelle = cgeLibelle;
+    public void VNormandieLeocarte.setCgecode(String cgecode) {
+        this.cgecode = cgecode;
     }
     
-    public String VNormandieLeocarte.getCentreSecuCode() {
-        return centreSecuCode;
+    public String VNormandieLeocarte.getCgelibelle() {
+        return cgelibelle;
     }
     
-    public void VNormandieLeocarte.setCentreSecuCode(String centreSecuCode) {
-        this.centreSecuCode = centreSecuCode;
+    public void VNormandieLeocarte.setCgelibelle(String cgelibelle) {
+        this.cgelibelle = cgelibelle;
     }
     
-    public String VNormandieLeocarte.getCentreSecuLibelle() {
-        return centreSecuLibelle;
+    public String VNormandieLeocarte.getCentresecucode() {
+        return centresecucode;
     }
     
-    public void VNormandieLeocarte.setCentreSecuLibelle(String centreSecuLibelle) {
-        this.centreSecuLibelle = centreSecuLibelle;
+    public void VNormandieLeocarte.setCentresecucode(String centresecucode) {
+        this.centresecucode = centresecucode;
     }
     
-    public Boolean VNormandieLeocarte.getAutorisationtransmissionCrous() {
-        return autorisationtransmissionCrous;
+    public String VNormandieLeocarte.getCentreseculibelle() {
+        return centreseculibelle;
     }
     
-    public void VNormandieLeocarte.setAutorisationtransmissionCrous(Boolean autorisationtransmissionCrous) {
-        this.autorisationtransmissionCrous = autorisationtransmissionCrous;
+    public void VNormandieLeocarte.setCentreseculibelle(String centreseculibelle) {
+        this.centreseculibelle = centreseculibelle;
     }
     
-    public Boolean VNormandieLeocarte.getAutorisationDiffusionPhoto() {
-        return autorisationDiffusionPhoto;
+    public String VNormandieLeocarte.getCotisationparticuliere() {
+        return cotisationparticuliere;
     }
     
-    public void VNormandieLeocarte.setAutorisationDiffusionPhoto(Boolean autorisationDiffusionPhoto) {
-        this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
+    public void VNormandieLeocarte.setCotisationparticuliere(String cotisationparticuliere) {
+        this.cotisationparticuliere = cotisationparticuliere;
+    }
+    
+    public BigDecimal VNormandieLeocarte.getAutorisationtransmissioncrous() {
+        return autorisationtransmissioncrous;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationtransmissioncrous(BigDecimal autorisationtransmissioncrous) {
+        this.autorisationtransmissioncrous = autorisationtransmissioncrous;
+    }
+    
+    public BigDecimal VNormandieLeocarte.getAutorisationdiffusionphoto() {
+        return autorisationdiffusionphoto;
+    }
+    
+    public void VNormandieLeocarte.setAutorisationdiffusionphoto(BigDecimal autorisationdiffusionphoto) {
+        this.autorisationdiffusionphoto = autorisationdiffusionphoto;
     }
     
 }
