@@ -15,12 +15,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "typePopulationCode", length = 2)
     private String VNormandieLeocarte.typePopulationCode;
     
-    @Column(name = "typePopulationCNOUS", length = 40)
-    private String VNormandieLeocarte.typePopulationCnous;
-    
-    @Column(name = "etablissementCode", length = 107)
-    private String VNormandieLeocarte.etablissementCode;
-    
     @Column(name = "typeVisuelCode", length = 1)
     private String VNormandieLeocarte.typeVisuelCode;
     
@@ -60,9 +54,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(style = "M-")
     private Date VNormandieLeocarte.dateFinDroits;
-    
-    @Column(name = "etablissementRNE", length = 8)
-    private String VNormandieLeocarte.etablissementRne;
     
     @Column(name = "affectation1Code", length = 6)
     private String VNormandieLeocarte.affectation1code;
@@ -121,28 +112,24 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "centreSecuLibelle", length = 10)
     private String VNormandieLeocarte.centreSecuLibelle;
     
+    @Column(name = "champlibre1", length = 30)
+    private String VNormandieLeocarte.champlibre1;
+    
+    @Column(name = "champlibre2", length = 30)
+    private String VNormandieLeocarte.champlibre2;
+    
+    @Column(name = "champlibre3", length = 30)
+    private String VNormandieLeocarte.champlibre3;
+    
+    @Column(name = "champlibre4", length = 30)
+    private String VNormandieLeocarte.champlibre4;
+    
     public String VNormandieLeocarte.getTypePopulationCode() {
         return typePopulationCode;
     }
     
     public void VNormandieLeocarte.setTypePopulationCode(String typePopulationCode) {
         this.typePopulationCode = typePopulationCode;
-    }
-    
-    public String VNormandieLeocarte.getTypePopulationCnous() {
-        return typePopulationCnous;
-    }
-    
-    public void VNormandieLeocarte.setTypePopulationCnous(String typePopulationCnous) {
-        this.typePopulationCnous = typePopulationCnous;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementCode() {
-        return etablissementCode;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementCode(String etablissementCode) {
-        this.etablissementCode = etablissementCode;
     }
     
     public String VNormandieLeocarte.getTypeVisuelCode() {
@@ -239,14 +226,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setDateFinDroits(Date dateFinDroits) {
         this.dateFinDroits = dateFinDroits;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementRne() {
-        return etablissementRne;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementRne(String etablissementRne) {
-        this.etablissementRne = etablissementRne;
     }
     
     public String VNormandieLeocarte.getAffectation1code() {
@@ -399,6 +378,38 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setCentreSecuLibelle(String centreSecuLibelle) {
         this.centreSecuLibelle = centreSecuLibelle;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre1() {
+        return champlibre1;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre1(String champlibre1) {
+        this.champlibre1 = champlibre1;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre2() {
+        return champlibre2;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre2(String champlibre2) {
+        this.champlibre2 = champlibre2;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre3() {
+        return champlibre3;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre3(String champlibre3) {
+        this.champlibre3 = champlibre3;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre4() {
+        return champlibre4;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre4(String champlibre4) {
+        this.champlibre4 = champlibre4;
     }
     
 }

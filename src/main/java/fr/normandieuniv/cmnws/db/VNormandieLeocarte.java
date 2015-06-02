@@ -4,12 +4,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.Id;
 import javax.persistence.TypedQuery;
 import javax.validation.constraints.NotNull;
-
 import org.springframework.roo.addon.dbre.RooDbManaged;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
-
 import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 
 /**
@@ -20,7 +18,7 @@ import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 @RooJavaBean
 @RooToString
 @RooDbManaged(automaticallyDelete = true)
-@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike"})
+@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" }, identifierField = "login", identifierType = String.class)
 public class VNormandieLeocarte {
 
     @Id
@@ -37,23 +35,14 @@ public class VNormandieLeocarte {
     @Column(columnDefinition = "BIT")
     private Boolean autorisationDiffusionPhoto;
 
-    @Column(name = "persID", columnDefinition = "text")
-    private String persID;
-
     @Column(columnDefinition = "text")
     private String titreCarteLibelle;
-
-    @Column(columnDefinition = "text")
-    private String etablissementLibelle;
 
     @Column(columnDefinition = "text")
     private String employeur;
 
     @Column(columnDefinition = "text")
     private String responsabiliteStruct;
-
-    @Column(columnDefinition = "text")
-    private String cotisationParticuliere;
 
     public static TypedQuery<fr.normandieuniv.cmnws.db.VNormandieLeocarte> findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsOrAnneeUniversitaireEqualsAndNomSurCarteLike(String anneeUniversitaire, String codeBaseMetier, String nomSurCarte) {
         if (anneeUniversitaire == null || anneeUniversitaire.length() == 0) throw new IllegalArgumentException("The anneeUniversitaire argument is required");

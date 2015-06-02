@@ -39,28 +39,12 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.autorisationDiffusionPhoto = autorisationDiffusionPhoto;
     }
     
-    public String VNormandieLeocarte.getPersID() {
-        return this.persID;
-    }
-    
-    public void VNormandieLeocarte.setPersID(String persID) {
-        this.persID = persID;
-    }
-    
     public String VNormandieLeocarte.getTitreCarteLibelle() {
         return this.titreCarteLibelle;
     }
     
     public void VNormandieLeocarte.setTitreCarteLibelle(String titreCarteLibelle) {
         this.titreCarteLibelle = titreCarteLibelle;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementLibelle() {
-        return this.etablissementLibelle;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementLibelle(String etablissementLibelle) {
-        this.etablissementLibelle = etablissementLibelle;
     }
     
     public String VNormandieLeocarte.getEmployeur() {
@@ -77,14 +61,6 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
     public void VNormandieLeocarte.setResponsabiliteStruct(String responsabiliteStruct) {
         this.responsabiliteStruct = responsabiliteStruct;
-    }
-    
-    public String VNormandieLeocarte.getCotisationParticuliere() {
-        return this.cotisationParticuliere;
-    }
-    
-    public void VNormandieLeocarte.setCotisationParticuliere(String cotisationParticuliere) {
-        this.cotisationParticuliere = cotisationParticuliere;
     }
     
 }
