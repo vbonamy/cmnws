@@ -6,16 +6,11 @@ La base de données doit être en MySQL et proposer une table (ou vue) nommée V
 | Field                         | Type         | Null | Key | Default | Extra |
 +-------------------------------+--------------+------+-----+---------+-------+
 | typePopulationCode            | varchar(2)   | YES  |     | NULL    |       |
-| typePopulationCNOUS           | varchar(40)  | YES  |     | NULL    |       |
-| etablissementCode             | varchar(107) | YES  |     | NULL    |       |
 | typeVisuelCode                | varchar(1)   | YES  |     | NULL    |       |
 | titreCarteLibelle             | varchar(60)  | YES  |     | NULL    |       |
 | prefixeLeoCode                | varchar(5)   | YES  |     | NULL    |       |
 | codeBaseMetier                | varchar(8)   | YES  |     | NULL    |       |
-| persID                        | varchar(30)  | YES  |     | NULL    |       |
 | buNo                          | varchar(8)   | YES  |     | NULL    |       |
-| login                         | varchar(20)  | NO   |     |         |       |
-| eduPersonAffiliation          | varchar(100) | YES  |     | NULL    |       |
 | eppn                          | varchar(34)  | NO   |     |         |       |
 | ine                           | varchar(11)  | YES  |     | NULL    |       |
 | nomSurCarte                   | varchar(40)  | YES  |     | NULL    |       |
@@ -24,9 +19,6 @@ La base de données doit être en MySQL et proposer une table (ou vue) nommée V
 | email                         | varchar(120) | YES  |     | NULL    |       |
 | dateFinDroits                 | date         | YES  |     | NULL    |       |
 | anneeUniversitaire            | char(4)      | NO   |     |         |       |
-| etablissementLibelle          | varchar(60)  | YES  |     | NULL    |       |
-| etablissementRNE              | varchar(8)   | YES  |     | NULL    |       |
-| employeur                     | varchar(60)  | YES  |     | NULL    |       |
 | affectation1Code              | varchar(6)   | YES  |     | NULL    |       |
 | affectationRNE                | varchar(8)   | YES  |     | NULL    |       |
 | affectation1Libelle           | varchar(60)  | YES  |     | NULL    |       |
@@ -47,8 +39,10 @@ La base de données doit être en MySQL et proposer une table (ou vue) nommée V
 | cgeLibelle                    | varchar(40)  | YES  |     | NULL    |       |
 | centreSecuCode                | varchar(3)   | YES  |     | NULL    |       |
 | centreSecuLibelle             | varchar(10)  | YES  |     | NULL    |       |
-| cotisationParticuliere        | varchar(60)  | YES  |     | NULL    |       |
 | autorisationtransmissionCrous | tinyint(1)   | YES  |     | NULL    |       |
 | autorisationDiffusionPhoto    | tinyint(1)   | YES  |     | NULL    |       |
+| champlibre1                   | varchar(30)  | YES  |     | NULL    |       |
+| champlibre2                   | varchar(30)  | YES  |     | NULL    |       |
+| champlibre3                   | varchar(30)  | YES  |     | NULL    |       |
+| champlibre4                   | varchar(30)  | YES  |     | NULL    |       |
 +-------------------------------+--------------+------+-----+---------+-------+
-
