@@ -4,10 +4,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.Id;
 import javax.persistence.TypedQuery;
 import javax.validation.constraints.NotNull;
+
 import org.springframework.roo.addon.dbre.RooDbManaged;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
+
 import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 
 /**
@@ -75,4 +77,5 @@ public class VNormandieLeocarte {
         q.setParameter("nomSurCarte", nomSurCarte);
         return q;
     }
+    
 }
