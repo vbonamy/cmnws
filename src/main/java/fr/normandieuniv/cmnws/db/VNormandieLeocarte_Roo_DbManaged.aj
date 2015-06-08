@@ -27,12 +27,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "buNo", length = 8)
     private String VNormandieLeocarte.buNo;
     
-    @Column(name = "eduPersonAffiliation", length = 100)
-    private String VNormandieLeocarte.eduPersonAffiliation;
-    
-    @Column(name = "eppn", length = 34)
-    private String VNormandieLeocarte.eppn;
-    
     @Column(name = "ine", length = 11)
     private String VNormandieLeocarte.ine;
     
@@ -162,22 +156,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setBuNo(String buNo) {
         this.buNo = buNo;
-    }
-    
-    public String VNormandieLeocarte.getEduPersonAffiliation() {
-        return eduPersonAffiliation;
-    }
-    
-    public void VNormandieLeocarte.setEduPersonAffiliation(String eduPersonAffiliation) {
-        this.eduPersonAffiliation = eduPersonAffiliation;
-    }
-    
-    public String VNormandieLeocarte.getEppn() {
-        return eppn;
-    }
-    
-    public void VNormandieLeocarte.setEppn(String eppn) {
-        this.eppn = eppn;
     }
     
     public String VNormandieLeocarte.getIne() {

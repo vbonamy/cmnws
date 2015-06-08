@@ -15,8 +15,6 @@
         <column name="prefixeLeoCode" primaryKey="false" required="false" scale="0" size="5" type="12,VARCHAR"/>
         <column name="codeBaseMetier" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
         <column name="buNo" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
-        <column name="login" primaryKey="false" required="true" scale="0" size="20" type="12,VARCHAR"/>
-        <column name="eduPersonAffiliation" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR"/>
         <column name="eppn" primaryKey="false" required="false" scale="0" size="34" type="12,VARCHAR"/>
         <column name="ine" primaryKey="false" required="false" scale="0" size="11" type="12,VARCHAR"/>
         <column name="nomSurCarte" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR"/>
@@ -25,7 +23,6 @@
         <column name="email" primaryKey="false" required="false" scale="0" size="120" type="12,VARCHAR"/>
         <column name="dateFinDroits" primaryKey="false" required="false" scale="0" size="10" type="91,DATE"/>
         <column name="anneeUniversitaire" primaryKey="false" required="true" scale="0" size="4" type="1,CHAR"/>
-        <column name="employeur" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR"/>
         <column name="affectation1Code" primaryKey="false" required="false" scale="0" size="6" type="12,VARCHAR"/>
         <column name="affectationRNE" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR"/>
         <column name="affectation1Libelle" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR"/>

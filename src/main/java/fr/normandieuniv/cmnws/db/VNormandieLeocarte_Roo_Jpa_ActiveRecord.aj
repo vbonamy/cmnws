@@ -14,7 +14,7 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager VNormandieLeocarte.entityManager;
     
-    public static final List<String> VNormandieLeocarte.fieldNames4OrderClauseFilter = java.util.Arrays.asList("login", "anneeUniversitaire", "autorisationtransmissionCrous", "autorisationDiffusionPhoto", "titreCarteLibelle", "employeur", "responsabiliteStruct");
+    public static final List<String> VNormandieLeocarte.fieldNames4OrderClauseFilter = java.util.Arrays.asList("eppn", "anneeUniversitaire", "autorisationtransmissionCrous", "autorisationDiffusionPhoto", "titreCarteLibelle", "responsabiliteStruct");
     
     public static final EntityManager VNormandieLeocarte.entityManager() {
         EntityManager em = new VNormandieLeocarte().entityManager;
@@ -41,9 +41,9 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
         return entityManager().createQuery(jpaQuery, VNormandieLeocarte.class).getResultList();
     }
     
-    public static VNormandieLeocarte VNormandieLeocarte.findVNormandieLeocarte(String login) {
-        if (login == null || login.length() == 0) return null;
-        return entityManager().find(VNormandieLeocarte.class, login);
+    public static VNormandieLeocarte VNormandieLeocarte.findVNormandieLeocarte(String eppn) {
+        if (eppn == null || eppn.length() == 0) return null;
+        return entityManager().find(VNormandieLeocarte.class, eppn);
     }
     
     public static List<VNormandieLeocarte> VNormandieLeocarte.findVNormandieLeocarteEntries(int firstResult, int maxResults) {
@@ -73,7 +73,7 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            VNormandieLeocarte attached = VNormandieLeocarte.findVNormandieLeocarte(this.login);
+            VNormandieLeocarte attached = VNormandieLeocarte.findVNormandieLeocarte(this.eppn);
             this.entityManager.remove(attached);
         }
     }

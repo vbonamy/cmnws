@@ -18,12 +18,12 @@ import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 @RooJavaBean
 @RooToString
 @RooDbManaged(automaticallyDelete = true)
-@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" }, identifierField = "login", identifierType = String.class)
+@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" }, identifierField = "eppn")
 public class VNormandieLeocarte {
 
     @Id
     @Column
-    private String login;
+    private String eppn;
 
     @Column(columnDefinition = "char")
     @NotNull
@@ -37,9 +37,6 @@ public class VNormandieLeocarte {
 
     @Column(columnDefinition = "text")
     private String titreCarteLibelle;
-
-    @Column(columnDefinition = "text")
-    private String employeur;
 
     @Column(columnDefinition = "text")
     private String responsabiliteStruct;
