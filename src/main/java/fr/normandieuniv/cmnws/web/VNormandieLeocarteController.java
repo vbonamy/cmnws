@@ -42,10 +42,10 @@ public class VNormandieLeocarteController {
     public void post(@PathVariable Long id, ModelMap modelMap, HttpServletRequest request, HttpServletResponse response) {
     }
 
-    @RequestMapping(value = "/{leocode}", produces = "text/html")
-    public String show(@PathVariable("leocode") String leocode, Model uiModel) {
-        uiModel.addAttribute("vnormandieleocarte_", VNormandieLeocarte.findVNormandieLeocarte(leocode));
-        uiModel.addAttribute("itemId", leocode);
+    @RequestMapping(value = "/{eppn:.+}", produces = "text/html")
+    public String show(@PathVariable("eppn") String eppn, Model uiModel) {
+        uiModel.addAttribute("vnormandieleocarte_", VNormandieLeocarte.findVNormandieLeocarte(eppn));
+        uiModel.addAttribute("itemId", eppn);
         return "vnormandieleocarte/show";
     }
     

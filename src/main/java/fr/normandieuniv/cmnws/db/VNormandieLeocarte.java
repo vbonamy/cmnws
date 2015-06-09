@@ -4,12 +4,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.Id;
 import javax.persistence.TypedQuery;
 import javax.validation.constraints.NotNull;
-
 import org.springframework.roo.addon.dbre.RooDbManaged;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
-
 import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 
 /**
@@ -20,35 +18,26 @@ import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 @RooJavaBean
 @RooToString
 @RooDbManaged(automaticallyDelete = true)
-@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" })
+@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" }, identifierType = VNormandieLeocartePK.class)
 public class VNormandieLeocarte {
 
     @Id
     @Column
-    private String login;
+    private String eppn;
 
     @Column(columnDefinition = "char")
     @NotNull
     private String anneeUniversitaire;
 
-    @Column(name = "persID", columnDefinition = "text")
-    private String persID;
-    
     @Column(columnDefinition = "text")
     private String titreCarteLibelle;
-
-    @Column(columnDefinition = "text")
-    private String etablissementLibelle;
-
-    @Column(columnDefinition = "text")
-    private String employeur;
 
     @Column(columnDefinition = "text")
     private String responsabiliteStruct;
 
     @Column(columnDefinition = "text")
     private String cotisationParticuliere;
-    
+
     @Column(name = "CODEBASEMETIER", length = 8)
     private String codeBaseMetier;
 

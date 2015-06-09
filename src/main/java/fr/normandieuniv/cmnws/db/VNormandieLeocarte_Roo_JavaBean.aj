@@ -7,12 +7,12 @@ import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
 
 privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
-    public String VNormandieLeocarte.getLogin() {
-        return this.login;
+    public String VNormandieLeocarte.getEppn() {
+        return this.eppn;
     }
     
-    public void VNormandieLeocarte.setLogin(String login) {
-        this.login = login;
+    public void VNormandieLeocarte.setEppn(String eppn) {
+        this.eppn = eppn;
     }
     
     public String VNormandieLeocarte.getAnneeUniversitaire() {
@@ -23,36 +23,12 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.anneeUniversitaire = anneeUniversitaire;
     }
     
-    public String VNormandieLeocarte.getPersID() {
-        return this.persID;
-    }
-    
-    public void VNormandieLeocarte.setPersID(String persID) {
-        this.persID = persID;
-    }
-    
     public String VNormandieLeocarte.getTitreCarteLibelle() {
         return this.titreCarteLibelle;
     }
     
     public void VNormandieLeocarte.setTitreCarteLibelle(String titreCarteLibelle) {
         this.titreCarteLibelle = titreCarteLibelle;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementLibelle() {
-        return this.etablissementLibelle;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementLibelle(String etablissementLibelle) {
-        this.etablissementLibelle = etablissementLibelle;
-    }
-    
-    public String VNormandieLeocarte.getEmployeur() {
-        return this.employeur;
-    }
-    
-    public void VNormandieLeocarte.setEmployeur(String employeur) {
-        this.employeur = employeur;
     }
     
     public String VNormandieLeocarte.getResponsabiliteStruct() {

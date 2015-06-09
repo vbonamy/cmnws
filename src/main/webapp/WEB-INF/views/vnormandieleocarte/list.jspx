@@ -21,13 +21,13 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_fr_normandieuniv_cmnws_db_VNormandieLeocarte" items="${vnormandieleocartes}" z="zdUwLC5lHvhyCb5lYB6RBvOvhKc=">
-        <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="login" update="false" z="xn1Xk0yFbAqTMSmAO8nOHFLOVmI=">
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_login" property="login" z="iciHNeVhfh4tBWKAI16A7po8J6A="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="Cr57o0zmgV+8wMdES9+5zCYYwpQ="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomsurcarte" property="nomsurcarte" z="fUJxOnyysTalUoC0NI0rb/zjgjc="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typevisuelcode" property="typevisuelcode" z="t/HdaceKQmy2kevsgN6LGB73ZIo="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titrecartelibelle" property="titrecartelibelle" z="X777XqUP1PoM4WNi4nM5ZV3Y0vU="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeleocode" property="prefixeleocode" z="OvAu7+WLFnXSftHlCzyfrtiNWpw="/>
+        <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="eppn" update="false" z="xn1Xk0yFbAqTMSmAO8nOHFLOVmI=">
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_eppn" property="eppn" z="ArHQNKsvbbzJCPbCAE3oUyLjdiA="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="HoYUyGaRuDMhBVESu7O2CooAq3s="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" property="nomSurCarte" z="AJccNYoHYvhcBKDOXkLVq8R7RoU="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeVisuelCode" property="typeVisuelCode" z="yDyCXe5N1iHy+fzzxox3dZn2PY8="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titrecartelibelle" property="titreCarteLibelle" />
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" z="WnDj160py4lxHg00j0tRoC7lrAo="/>
         </table:table>
     </page:list>
 </div>

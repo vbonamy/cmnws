@@ -17,12 +17,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "TYPEPOPULATIONCODE", length = 2)
     private String VNormandieLeocarte.typepopulationcode;
     
-    @Column(name = "TYPEPOPULATIONCNOUS", length = 40)
-    private String VNormandieLeocarte.typepopulationcnous;
-    
-    @Column(name = "ETABLISSEMENTCODE", length = 107)
-    private String VNormandieLeocarte.etablissementcode;
-    
     @Column(name = "TYPEVISUELCODE", length = 1)
     private String VNormandieLeocarte.typevisuelcode;
     
@@ -32,18 +26,8 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "PREFIXELEOCODE", length = 5)
     private String VNormandieLeocarte.prefixeleocode;
     
-    @Column(name = "PERSID", length = 30)
-    private String VNormandieLeocarte.persid;
-    
     @Column(name = "BUNO", length = 8)
     private String VNormandieLeocarte.buno;
-    
-    @Column(name = "EDUPERSONAFFILIATION", length = 100)
-    private String VNormandieLeocarte.edupersonaffiliation;
-    
-    @Column(name = "EPPN", length = 34)
-    @NotNull
-    private String VNormandieLeocarte.eppn;
     
     @Column(name = "INE", length = 11)
     private String VNormandieLeocarte.ine;
@@ -70,12 +54,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "ANNEEUNIVERSITAIRE", length = 4)
     @NotNull
     private String VNormandieLeocarte.anneeuniversitaire;
-    
-    @Column(name = "ETABLISSEMENTLIBELLE", length = 60)
-    private String VNormandieLeocarte.etablissementlibelle;
-    
-    @Column(name = "ETABLISSEMENTRNE", length = 8)
-    private String VNormandieLeocarte.etablissementrne;
     
     @Column(name = "AFFECTATION1CODE", length = 6)
     private String VNormandieLeocarte.affectation1code;
@@ -137,14 +115,23 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     @Column(name = "CENTRESECULIBELLE", length = 10)
     private String VNormandieLeocarte.centreseculibelle;
     
-    @Column(name = "COTISATIONPARTICULIERE", length = 60)
-    private String VNormandieLeocarte.cotisationparticuliere;
-    
     @Column(name = "AUTORISATIONTRANSMISSIONCROUS", precision = 1)
     private BigDecimal VNormandieLeocarte.autorisationtransmissioncrous;
     
     @Column(name = "AUTORISATIONDIFFUSIONPHOTO", precision = 1)
     private BigDecimal VNormandieLeocarte.autorisationdiffusionphoto;
+    
+    @Column(name = "CHAMPLIBRE1", length = 30)
+    private String VNormandieLeocarte.champlibre1;
+    
+    @Column(name = "CHAMPLIBRE2", length = 30)
+    private String VNormandieLeocarte.champlibre2;
+    
+    @Column(name = "CHAMPLIBRE3", length = 30)
+    private String VNormandieLeocarte.champlibre3;
+    
+    @Column(name = "CHAMPLIBRE4", length = 30)
+    private String VNormandieLeocarte.champlibre4;
     
     public String VNormandieLeocarte.getTypepopulationcode() {
         return typepopulationcode;
@@ -152,22 +139,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setTypepopulationcode(String typepopulationcode) {
         this.typepopulationcode = typepopulationcode;
-    }
-    
-    public String VNormandieLeocarte.getTypepopulationcnous() {
-        return typepopulationcnous;
-    }
-    
-    public void VNormandieLeocarte.setTypepopulationcnous(String typepopulationcnous) {
-        this.typepopulationcnous = typepopulationcnous;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementcode() {
-        return etablissementcode;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementcode(String etablissementcode) {
-        this.etablissementcode = etablissementcode;
     }
     
     public String VNormandieLeocarte.getTypevisuelcode() {
@@ -194,36 +165,12 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.prefixeleocode = prefixeleocode;
     }
     
-    public String VNormandieLeocarte.getPersid() {
-        return persid;
-    }
-    
-    public void VNormandieLeocarte.setPersid(String persid) {
-        this.persid = persid;
-    }
-    
     public String VNormandieLeocarte.getBuno() {
         return buno;
     }
     
     public void VNormandieLeocarte.setBuno(String buno) {
         this.buno = buno;
-    }
-    
-    public String VNormandieLeocarte.getEdupersonaffiliation() {
-        return edupersonaffiliation;
-    }
-    
-    public void VNormandieLeocarte.setEdupersonaffiliation(String edupersonaffiliation) {
-        this.edupersonaffiliation = edupersonaffiliation;
-    }
-    
-    public String VNormandieLeocarte.getEppn() {
-        return eppn;
-    }
-    
-    public void VNormandieLeocarte.setEppn(String eppn) {
-        this.eppn = eppn;
     }
     
     public String VNormandieLeocarte.getIne() {
@@ -280,22 +227,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setAnneeuniversitaire(String anneeuniversitaire) {
         this.anneeuniversitaire = anneeuniversitaire;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementlibelle() {
-        return etablissementlibelle;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementlibelle(String etablissementlibelle) {
-        this.etablissementlibelle = etablissementlibelle;
-    }
-    
-    public String VNormandieLeocarte.getEtablissementrne() {
-        return etablissementrne;
-    }
-    
-    public void VNormandieLeocarte.setEtablissementrne(String etablissementrne) {
-        this.etablissementrne = etablissementrne;
     }
     
     public String VNormandieLeocarte.getAffectation1code() {
@@ -458,14 +389,6 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
         this.centreseculibelle = centreseculibelle;
     }
     
-    public String VNormandieLeocarte.getCotisationparticuliere() {
-        return cotisationparticuliere;
-    }
-    
-    public void VNormandieLeocarte.setCotisationparticuliere(String cotisationparticuliere) {
-        this.cotisationparticuliere = cotisationparticuliere;
-    }
-    
     public BigDecimal VNormandieLeocarte.getAutorisationtransmissioncrous() {
         return autorisationtransmissioncrous;
     }
@@ -480,6 +403,38 @@ privileged aspect VNormandieLeocarte_Roo_DbManaged {
     
     public void VNormandieLeocarte.setAutorisationdiffusionphoto(BigDecimal autorisationdiffusionphoto) {
         this.autorisationdiffusionphoto = autorisationdiffusionphoto;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre1() {
+        return champlibre1;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre1(String champlibre1) {
+        this.champlibre1 = champlibre1;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre2() {
+        return champlibre2;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre2(String champlibre2) {
+        this.champlibre2 = champlibre2;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre3() {
+        return champlibre3;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre3(String champlibre3) {
+        this.champlibre3 = champlibre3;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre4() {
+        return champlibre4;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre4(String champlibre4) {
+        this.champlibre4 = champlibre4;
     }
     
 }

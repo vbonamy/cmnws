@@ -8,18 +8,13 @@
     <option key="disableVersionFields" value="false"/>
     <option key="disableGeneratedIdentifiers" value="false"/>
     <option key="testAutomatically" value="false"/>
-    <table name="V_NORMANDIE_LEOCARTE">
+    <table alias="HARP_ADM" name="V_NORMANDIE_LEOCARTE">
         <column name="TYPEPOPULATIONCODE" primaryKey="false" required="false" scale="0" size="2" type="12,VARCHAR2"/>
-        <column name="TYPEPOPULATIONCNOUS" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
-        <column name="ETABLISSEMENTCODE" primaryKey="false" required="false" scale="0" size="107" type="12,VARCHAR2"/>
         <column name="TYPEVISUELCODE" primaryKey="false" required="false" scale="0" size="1" type="12,VARCHAR2"/>
         <column name="TITRECARTELIBELLE" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR2"/>
         <column name="PREFIXELEOCODE" primaryKey="false" required="false" scale="0" size="5" type="12,VARCHAR2"/>
         <column name="CODEBASEMETIER" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR2"/>
-        <column name="PERSID" primaryKey="false" required="false" scale="0" size="30" type="12,VARCHAR2"/>
         <column name="BUNO" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR2"/>
-        <column name="LOGIN" primaryKey="false" required="true" scale="0" size="20" type="12,VARCHAR2"/>
-        <column name="EDUPERSONAFFILIATION" primaryKey="false" required="false" scale="0" size="100" type="12,VARCHAR2"/>
         <column name="EPPN" primaryKey="false" required="true" scale="0" size="34" type="12,VARCHAR2"/>
         <column name="INE" primaryKey="false" required="false" scale="0" size="11" type="12,VARCHAR2"/>
         <column name="NOMSURCARTE" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
@@ -28,9 +23,6 @@
         <column name="EMAIL" primaryKey="false" required="false" scale="0" size="120" type="12,VARCHAR2"/>
         <column name="DATEFINDROITS" primaryKey="false" required="false" scale="0" size="7" type="93,DATE"/>
         <column name="ANNEEUNIVERSITAIRE" primaryKey="false" required="true" scale="0" size="4" type="1,CHAR"/>
-        <column name="ETABLISSEMENTLIBELLE" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR2"/>
-        <column name="ETABLISSEMENTRNE" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR2"/>
-        <column name="EMPLOYEUR" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR2"/>
         <column name="AFFECTATION1CODE" primaryKey="false" required="false" scale="0" size="6" type="12,VARCHAR2"/>
         <column name="AFFECTATIONRNE" primaryKey="false" required="false" scale="0" size="8" type="12,VARCHAR2"/>
         <column name="AFFECTATION1LIBELLE" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR2"/>
@@ -51,8 +43,11 @@
         <column name="CGELIBELLE" primaryKey="false" required="false" scale="0" size="40" type="12,VARCHAR2"/>
         <column name="CENTRESECUCODE" primaryKey="false" required="false" scale="0" size="3" type="12,VARCHAR2"/>
         <column name="CENTRESECULIBELLE" primaryKey="false" required="false" scale="0" size="10" type="12,VARCHAR2"/>
-        <column name="COTISATIONPARTICULIERE" primaryKey="false" required="false" scale="0" size="60" type="12,VARCHAR2"/>
         <column name="AUTORISATIONTRANSMISSIONCROUS" primaryKey="false" required="false" scale="0" size="1" type="3,NUMBER"/>
         <column name="AUTORISATIONDIFFUSIONPHOTO" primaryKey="false" required="false" scale="0" size="1" type="3,NUMBER"/>
+        <column name="CHAMPLIBRE1" primaryKey="false" required="false" scale="0" size="30" type="12,VARCHAR2"/>
+        <column name="CHAMPLIBRE2" primaryKey="false" required="false" scale="0" size="30" type="12,VARCHAR2"/>
+        <column name="CHAMPLIBRE3" primaryKey="false" required="false" scale="0" size="30" type="12,VARCHAR2"/>
+        <column name="CHAMPLIBRE4" primaryKey="false" required="false" scale="0" size="30" type="12,VARCHAR2"/>
     </table>
 </database>
