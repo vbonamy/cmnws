@@ -14,7 +14,7 @@ privileged aspect VNormandieLeocarte_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager VNormandieLeocarte.entityManager;
     
-    public static final List<String> VNormandieLeocarte.fieldNames4OrderClauseFilter = java.util.Arrays.asList("eppn", "anneeUniversitaire", "titreCarteLibelle", "responsabiliteStruct", "cotisationParticuliere", "codeBaseMetier");
+    public static final List<String> VNormandieLeocarte.fieldNames4OrderClauseFilter = java.util.Arrays.asList("eppn", "anneeUniversitaire", "titreCarteLibelle", "responsabiliteStruct", "codeBaseMetier");
     
     public static final EntityManager VNormandieLeocarte.entityManager() {
         EntityManager em = new VNormandieLeocarte().entityManager;

@@ -22,7 +22,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show create="false" delete="false" id="ps_fr_normandieuniv_cmnws_db_VNormandieLeocarte" list="false" object="${vnormandieleocarte_}" path="/vnormandieleocarte" update="false" z="user-managed">
         <field:display field="anneeUniversitaire" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_anneeUniversitaire" object="${vnormandieleocarte_}" z="KGn9yYxmvXf58Dc3A6rlemPSJHA="/>
-        <field:display field="cotisationParticuliere" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_cotisationParticuliere" object="${vnormandieleocarte_}" z="GLHFFQugm+DWhpA7O3aMMP7OD8o="/>
         <field:display field="titreCarteLibelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titreCarteLibelle" object="${vnormandieleocarte_}" z="EHTEUB6Bp/uO63G10RmlOnM76QE="/>
         <field:display field="responsabiliteStruct" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_responsabiliteStruct" object="${vnormandieleocarte_}" z="gR42nfiz1aXm/Ze32A3WemoXTg4="/>
         <field:display field="titrecartelibelle" id="s_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titrecartelibelle" object="${vnormandieleocarte_}" z="lHRNIWfotqFMKhf/2RvsigUijnU="/>

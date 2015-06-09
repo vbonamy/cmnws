@@ -24,10 +24,10 @@
         <table:table data="${vnormandieleocartes}" delete="false" id="l_fr_normandieuniv_cmnws_db_VNormandieLeocarte" path="/vnormandieleocarte" typeIdFieldName="eppn" update="false" z="xn1Xk0yFbAqTMSmAO8nOHFLOVmI=">
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_eppn" property="eppn" z="ArHQNKsvbbzJCPbCAE3oUyLjdiA="/>
             <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_codeBaseMetier" property="codeBaseMetier" z="HoYUyGaRuDMhBVESu7O2CooAq3s="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" property="nomSurCarte" z="AJccNYoHYvhcBKDOXkLVq8R7RoU="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeVisuelCode" property="typeVisuelCode" z="yDyCXe5N1iHy+fzzxox3dZn2PY8="/>
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titrecartelibelle" property="titreCarteLibelle" />
-            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeLeoCode" z="WnDj160py4lxHg00j0tRoC7lrAo="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_nomSurCarte" property="nomsurcarte" z="AJccNYoHYvhcBKDOXkLVq8R7RoU="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_typeVisuelCode" property="typevisuelcode" z="yDyCXe5N1iHy+fzzxox3dZn2PY8="/>
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_titrecartelibelle" property="titrecartelibelle" />
+            <table:column id="c_fr_normandieuniv_cmnws_db_VNormandieLeocarte_prefixeLeoCode" property="prefixeleocode" z="WnDj160py4lxHg00j0tRoC7lrAo="/>
         </table:table>
     </page:list>
 </div>

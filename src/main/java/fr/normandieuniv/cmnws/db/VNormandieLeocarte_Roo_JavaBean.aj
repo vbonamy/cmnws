@@ -39,14 +39,6 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.responsabiliteStruct = responsabiliteStruct;
     }
     
-    public String VNormandieLeocarte.getCotisationParticuliere() {
-        return this.cotisationParticuliere;
-    }
-    
-    public void VNormandieLeocarte.setCotisationParticuliere(String cotisationParticuliere) {
-        this.cotisationParticuliere = cotisationParticuliere;
-    }
-    
     public String VNormandieLeocarte.getCodeBaseMetier() {
         return this.codeBaseMetier;
     }

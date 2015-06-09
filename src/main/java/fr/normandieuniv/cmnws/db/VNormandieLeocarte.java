@@ -18,7 +18,7 @@ import fr.normandieuniv.cmnws.services.VNormandieLeocarteWsSearchService;
 @RooJavaBean
 @RooToString
 @RooDbManaged(automaticallyDelete = true)
-@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" }, identifierType = VNormandieLeocartePK.class)
+@RooJpaActiveRecord(versionField = "", table = "V_NORMANDIE_LEOCARTE", finders = { "findVNormandieLeocartesByAnneeUniversitaireEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEquals", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndNomSurCarteLike", "findVNormandieLeocartesByAnneeUniversitaireEqualsAndCodeBaseMetierEqualsAndNomSurCarteLike" }, identifierType = String.class)
 public class VNormandieLeocarte {
 
     @Id
@@ -34,9 +34,6 @@ public class VNormandieLeocarte {
 
     @Column(columnDefinition = "text")
     private String responsabiliteStruct;
-
-    @Column(columnDefinition = "text")
-    private String cotisationParticuliere;
 
     @Column(name = "CODEBASEMETIER", length = 8)
     private String codeBaseMetier;
