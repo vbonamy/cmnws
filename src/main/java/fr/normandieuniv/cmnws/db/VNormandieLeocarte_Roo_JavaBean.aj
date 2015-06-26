@@ -4,6 +4,7 @@
 package fr.normandieuniv.cmnws.db;
 
 import fr.normandieuniv.cmnws.db.VNormandieLeocarte;
+import java.util.Date;
 
 privileged aspect VNormandieLeocarte_Roo_JavaBean {
     
@@ -39,12 +40,276 @@ privileged aspect VNormandieLeocarte_Roo_JavaBean {
         this.responsabiliteStruct = responsabiliteStruct;
     }
     
+    public String VNormandieLeocarte.getTypePopulationCode() {
+        return this.typePopulationCode;
+    }
+    
+    public void VNormandieLeocarte.setTypePopulationCode(String typePopulationCode) {
+        this.typePopulationCode = typePopulationCode;
+    }
+    
+    public String VNormandieLeocarte.getTypeVisuelCode() {
+        return this.typeVisuelCode;
+    }
+    
+    public void VNormandieLeocarte.setTypeVisuelCode(String typeVisuelCode) {
+        this.typeVisuelCode = typeVisuelCode;
+    }
+    
+    public String VNormandieLeocarte.getPrefixeLeoCode() {
+        return this.prefixeLeoCode;
+    }
+    
+    public void VNormandieLeocarte.setPrefixeLeoCode(String prefixeLeoCode) {
+        this.prefixeLeoCode = prefixeLeoCode;
+    }
+    
     public String VNormandieLeocarte.getCodeBaseMetier() {
         return this.codeBaseMetier;
     }
     
     public void VNormandieLeocarte.setCodeBaseMetier(String codeBaseMetier) {
         this.codeBaseMetier = codeBaseMetier;
+    }
+    
+    public String VNormandieLeocarte.getBuNo() {
+        return this.buNo;
+    }
+    
+    public void VNormandieLeocarte.setBuNo(String buNo) {
+        this.buNo = buNo;
+    }
+    
+    public String VNormandieLeocarte.getIne() {
+        return this.ine;
+    }
+    
+    public void VNormandieLeocarte.setIne(String ine) {
+        this.ine = ine;
+    }
+    
+    public String VNormandieLeocarte.getNomSurCarte() {
+        return this.nomSurCarte;
+    }
+    
+    public void VNormandieLeocarte.setNomSurCarte(String nomSurCarte) {
+        this.nomSurCarte = nomSurCarte;
+    }
+    
+    public String VNormandieLeocarte.getPrenom() {
+        return this.prenom;
+    }
+    
+    public void VNormandieLeocarte.setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+    
+    public Date VNormandieLeocarte.getDateNaissance() {
+        return this.dateNaissance;
+    }
+    
+    public void VNormandieLeocarte.setDateNaissance(Date dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
+    
+    public String VNormandieLeocarte.getEmail() {
+        return this.email;
+    }
+    
+    public void VNormandieLeocarte.setEmail(String email) {
+        this.email = email;
+    }
+    
+    public Date VNormandieLeocarte.getDateFinDroits() {
+        return this.dateFinDroits;
+    }
+    
+    public void VNormandieLeocarte.setDateFinDroits(Date dateFinDroits) {
+        this.dateFinDroits = dateFinDroits;
+    }
+    
+    public String VNormandieLeocarte.getAffectation1code() {
+        return this.affectation1code;
+    }
+    
+    public void VNormandieLeocarte.setAffectation1code(String affectation1code) {
+        this.affectation1code = affectation1code;
+    }
+    
+    public String VNormandieLeocarte.getAffectationRne() {
+        return this.affectationRne;
+    }
+    
+    public void VNormandieLeocarte.setAffectationRne(String affectationRne) {
+        this.affectationRne = affectationRne;
+    }
+    
+    public String VNormandieLeocarte.getAffectation1libelle() {
+        return this.affectation1libelle;
+    }
+    
+    public void VNormandieLeocarte.setAffectation1libelle(String affectation1libelle) {
+        this.affectation1libelle = affectation1libelle;
+    }
+    
+    public String VNormandieLeocarte.getAffectation2code() {
+        return this.affectation2code;
+    }
+    
+    public void VNormandieLeocarte.setAffectation2code(String affectation2code) {
+        this.affectation2code = affectation2code;
+    }
+    
+    public String VNormandieLeocarte.getAffectation2libelle() {
+        return this.affectation2libelle;
+    }
+    
+    public void VNormandieLeocarte.setAffectation2libelle(String affectation2libelle) {
+        this.affectation2libelle = affectation2libelle;
+    }
+    
+    public String VNormandieLeocarte.getCorps() {
+        return this.corps;
+    }
+    
+    public void VNormandieLeocarte.setCorps(String corps) {
+        this.corps = corps;
+    }
+    
+    public String VNormandieLeocarte.getIndiceInm() {
+        return this.indiceInm;
+    }
+    
+    public void VNormandieLeocarte.setIndiceInm(String indiceInm) {
+        this.indiceInm = indiceInm;
+    }
+    
+    public String VNormandieLeocarte.getDisciplineLibelle() {
+        return this.disciplineLibelle;
+    }
+    
+    public void VNormandieLeocarte.setDisciplineLibelle(String disciplineLibelle) {
+        this.disciplineLibelle = disciplineLibelle;
+    }
+    
+    public String VNormandieLeocarte.getDisciplineCode() {
+        return this.disciplineCode;
+    }
+    
+    public void VNormandieLeocarte.setDisciplineCode(String disciplineCode) {
+        this.disciplineCode = disciplineCode;
+    }
+    
+    public String VNormandieLeocarte.getVersionVetCode() {
+        return this.versionVetCode;
+    }
+    
+    public void VNormandieLeocarte.setVersionVetCode(String versionVetCode) {
+        this.versionVetCode = versionVetCode;
+    }
+    
+    public String VNormandieLeocarte.getEtapeLibelle() {
+        return this.etapeLibelle;
+    }
+    
+    public void VNormandieLeocarte.setEtapeLibelle(String etapeLibelle) {
+        this.etapeLibelle = etapeLibelle;
+    }
+    
+    public String VNormandieLeocarte.getEtapeCode() {
+        return this.etapeCode;
+    }
+    
+    public void VNormandieLeocarte.setEtapeCode(String etapeCode) {
+        this.etapeCode = etapeCode;
+    }
+    
+    public String VNormandieLeocarte.getEtapeSecondeCode() {
+        return this.etapeSecondeCode;
+    }
+    
+    public void VNormandieLeocarte.setEtapeSecondeCode(String etapeSecondeCode) {
+        this.etapeSecondeCode = etapeSecondeCode;
+    }
+    
+    public String VNormandieLeocarte.getVersionVetsecondeCode() {
+        return this.versionVetsecondeCode;
+    }
+    
+    public void VNormandieLeocarte.setVersionVetsecondeCode(String versionVetsecondeCode) {
+        this.versionVetsecondeCode = versionVetsecondeCode;
+    }
+    
+    public String VNormandieLeocarte.getEtapeSecondeLibelle() {
+        return this.etapeSecondeLibelle;
+    }
+    
+    public void VNormandieLeocarte.setEtapeSecondeLibelle(String etapeSecondeLibelle) {
+        this.etapeSecondeLibelle = etapeSecondeLibelle;
+    }
+    
+    public String VNormandieLeocarte.getCgeCode() {
+        return this.cgeCode;
+    }
+    
+    public void VNormandieLeocarte.setCgeCode(String cgeCode) {
+        this.cgeCode = cgeCode;
+    }
+    
+    public String VNormandieLeocarte.getCgeLibelle() {
+        return this.cgeLibelle;
+    }
+    
+    public void VNormandieLeocarte.setCgeLibelle(String cgeLibelle) {
+        this.cgeLibelle = cgeLibelle;
+    }
+    
+    public String VNormandieLeocarte.getCentreSecuCode() {
+        return this.centreSecuCode;
+    }
+    
+    public void VNormandieLeocarte.setCentreSecuCode(String centreSecuCode) {
+        this.centreSecuCode = centreSecuCode;
+    }
+    
+    public String VNormandieLeocarte.getCentreSecuLibelle() {
+        return this.centreSecuLibelle;
+    }
+    
+    public void VNormandieLeocarte.setCentreSecuLibelle(String centreSecuLibelle) {
+        this.centreSecuLibelle = centreSecuLibelle;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre1() {
+        return this.champlibre1;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre1(String champlibre1) {
+        this.champlibre1 = champlibre1;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre2() {
+        return this.champlibre2;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre2(String champlibre2) {
+        this.champlibre2 = champlibre2;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre3() {
+        return this.champlibre3;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre3(String champlibre3) {
+        this.champlibre3 = champlibre3;
+    }
+    
+    public String VNormandieLeocarte.getChamplibre4() {
+        return this.champlibre4;
+    }
+    
+    public void VNormandieLeocarte.setChamplibre4(String champlibre4) {
+        this.champlibre4 = champlibre4;
     }
     
 }

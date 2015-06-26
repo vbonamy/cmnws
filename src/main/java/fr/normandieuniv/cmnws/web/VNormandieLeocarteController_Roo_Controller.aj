@@ -14,6 +14,8 @@ privileged aspect VNormandieLeocarteController_Roo_Controller {
     void VNormandieLeocarteController.addDateTimeFormatPatterns(Model uiModel) {
         uiModel.addAttribute("VNormandieLeocarte__datenaissance_date_format", DateTimeFormat.patternForStyle("MM", LocaleContextHolder.getLocale()));
         uiModel.addAttribute("VNormandieLeocarte__datefindroits_date_format", DateTimeFormat.patternForStyle("MM", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("VNormandieLeocarte__datenaissance_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("VNormandieLeocarte__datefindroits_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
 }

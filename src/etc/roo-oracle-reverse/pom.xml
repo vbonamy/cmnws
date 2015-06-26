@@ -16,7 +16,7 @@
         <pkgLicense>http://www.oracle.com</pkgLicense>
         <repo.folder>com/oracle/roo/jdbc</repo.folder>
         <google.code.project.name>${project.name}</google.code.project.name>
-    <roo.version>1.3.1.RC1</roo.version>
+    <roo.version>1.3.1.RELEASE</roo.version>
     </properties>
     <dependencies>
 <!-- Put your oracle dependency here.  This is mine -->
