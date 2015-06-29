@@ -4,7 +4,7 @@
     <groupId>fr.normandieuniv.cmnws</groupId>
     <artifactId>cmnws</artifactId>
     <packaging>war</packaging>
-    <version>1.0.8-oracle-SNAPSHOT</version>
+    <version>1.0.7-oracle-3</version>
     <name>cmnws</name>
     <properties>
         <aspectj.version>1.7.0</aspectj.version>
