@@ -32,10 +32,10 @@ public class VNormandieLeocarte {
     @Column
     private String eppn;
     
-    @Column(columnDefinition = "BIT")
+    @Column(columnDefinition = "NUMBER(1)")
     private Boolean autorisationtransmissionCrous;
     
-    @Column(columnDefinition = "BIT")
+    @Column(columnDefinition = "NUMBER(1)")
     private Boolean autorisationDiffusionPhoto;
 
     @Column(columnDefinition = "char")
